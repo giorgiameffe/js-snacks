@@ -103,3 +103,34 @@ console.log(countVowels('Funzioni'));
 
 }
 
+// 8. BONUS – Trova la persona più anziana
+// Hai un array di oggetti, ognuno con un nome e un’età.
+// Scrivi un algoritmo che trovi la persona più anziana e stampi il suo nome.
+
+{
+    const people = [
+        {
+            name: 'Giuseppe',
+            age: 40
+        },
+        {
+            name: 'Silvia',
+            age: 28
+        },
+        {
+            name: 'Roberto',
+            age: 51
+        }
+    ];
+
+    let olderPerson = people[0];
+
+    for (let i = 0; i < people.length; i++) {
+
+        if (people[i].age > olderPerson.age) {
+            olderPerson = people[i]
+        }
+    }
+
+    console.log(olderPerson.name);
+}
