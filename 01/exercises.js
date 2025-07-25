@@ -26,3 +26,13 @@ const numbers = [3, 8, 5, 9];
 const doubledNumbers = numbers.map(number => number * 2);
 console.log(doubledNumbers);
 
+// 4. METODI ARRAY – Filtra solo i numeri pari
+// Usa .filter() per ottenere un nuovo array contenente solo i numeri pari da un array di numeri.
+
+{
+    const numbers = [8, 5, 16, 9, 28];
+
+    const filteredNumbers = numbers.filter(number => number % 2 === 0);
+    console.log(filteredNumbers);
+}
+
