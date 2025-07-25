@@ -62,3 +62,26 @@ const people = [
 const peopleNames = people.map(person => person.name);
 console.log(peopleNames);
 
+// 6. FUNZIONI – Conta le vocali in una stringa
+// Scrivi una funzione chiamata countVowels che prende una stringa
+// e restituisce il numero di vocali presenti (a, e, i, o, u, anche maiuscole).
+
+function countVowels(word) {
+
+    let count = 0;
+    const vowels = 'aeiouAEIOU';
+
+    for (let i = 0; i < word.length; i++) {
+
+        const currentLetter = word[i];
+
+        if (vowels.includes(currentLetter)) {
+            count++
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels('Funzioni'));
+
