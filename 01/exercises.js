@@ -85,3 +85,21 @@ function countVowels(word) {
 
 console.log(countVowels('Funzioni'));
 
+// 7. CICLO FOR – Calcola la somma totale di numeri in un array
+// Dato un array di numeri, usa un ciclo for per calcolare e stampare la somma totale di tutti i valori.
+
+{
+    const numbers = [1, 5, 3, 7];
+
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        const currentNumber = numbers[i];
+        sum += currentNumber;
+    }
+
+    console.log(sum)
+
+}
+
