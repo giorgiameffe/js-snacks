@@ -18,3 +18,11 @@ const person = {
 
 console.log(`Nome: ${person.name}`);
 
+// 3. METODI ARRAY – Raddoppia ogni numero usando .map()
+// Dato un array di numeri, crea un nuovo array con ogni numero moltiplicato per 2.
+
+const numbers = [3, 8, 5, 9];
+
+const doubledNumbers = numbers.map(number => number * 2);
+console.log(doubledNumbers);
+
