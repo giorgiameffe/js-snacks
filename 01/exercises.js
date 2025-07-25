@@ -36,3 +36,29 @@ console.log(doubledNumbers);
     console.log(filteredNumbers);
 }
 
+// 5. ARRAY DI OGGETTI – Estrai solo i nomi da un array
+// Hai un array di oggetti, ognuno con un nome e un’età.
+// Devi creare un nuovo array che contiene solo i nomi.
+
+const people = [
+    {
+        name: 'Valentina',
+        age: 23
+    },
+    {
+        name: 'Dario',
+        age: 30
+    },
+    {
+        name: 'Sofia',
+        age: 14
+    },
+    {
+        name: 'Giacomo',
+        age: 10
+    }
+]
+
+const peopleNames = people.map(person => person.name);
+console.log(peopleNames);
+
