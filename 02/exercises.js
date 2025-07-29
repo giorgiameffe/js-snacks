@@ -7,9 +7,13 @@
    Scrivi un ciclo for che calcoli e stampi la somma di tutti i numeri da 1 a 100.
 */
 
+let sum = 0;
+
 for (let i = 1; i <= 100; i++) {
-   console.log(i);
+   sum += i
 }
+
+console.log(sum)
 
 
 /* 
@@ -17,7 +21,12 @@ for (let i = 1; i <= 100; i++) {
    Scrivi un ciclo for che stampi solo i numeri pari compresi tra 1 e 50.
 */
 
+for (let i = 1; i <= 50; i++) {
 
+   if (i % 2 === 0) {
+      console.log(i);
+   }
+}
 
 
 /*
@@ -136,4 +145,3 @@ const users = [
       { name: "Marco", email: "marco@example.com" }
    ];
 }
-
