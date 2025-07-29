@@ -150,18 +150,23 @@ console.log(isEven(7));
 }
 
 
-
 // =======================================
 // 🧱 ESERCIZI SUGLI OGGETTI
 // =======================================
 
 /*
 10. Oggetto persona
-    Crea un oggetto chiamato persona con le proprietà: firstname, lastname, age.
+    Crea un oggetto chiamato person con le proprietà: firstname, lastname, age.
     Stampa una frase come: "Ciao, mi chiamo Mario Rossi e ho 30 anni".
 */
 
+const person = {
+   firstname: 'Mario',
+   lastname: 'Rossi',
+   age: 30
+}
 
+console.log(`Ciao, mi chiamo ${person.firstname} ${person.lastname} e ho ${person.age} anni.`)
 
 
 /*
@@ -170,10 +175,12 @@ console.log(isEven(7));
 */
 
 const users = [
-   { name: "Alice", age: 25 },
-   { name: "Bob", age: 17 },
-   { name: "Carla", age: 30 }
+   { name: "Alessia", age: 25 },
+   { name: "Marta", age: 17 },
+   { name: "Antonio", age: 30 }
 ];
+
+
 
 
 
