@@ -197,4 +197,11 @@ console.log(filteredUsers);
       { name: "Marco", email: "marco@example.com" }
    ];
 
+   function findUser(name) {
+
+      return users.find(user => user.name === name)
+   }
+
+   console.log(findUser('Giulia'))
+
 }
