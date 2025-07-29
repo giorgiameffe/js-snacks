@@ -139,6 +139,15 @@ console.log(isEven(7));
     Usa .reduce() per calcolare la somma di tutti gli elementi in un array numerico.
 */
 
+{
+   const numbers = [1, 2, 3, 4, 5];
+
+   const sumNumbers = numbers.reduce((acc, currentValue) => {
+      return acc + currentValue;
+   })
+
+   console.log(sumNumbers);
+}
 
 
 
