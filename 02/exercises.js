@@ -29,17 +29,22 @@ for (let i = 1; i <= 50; i++) {
 }
 
 
-/*
-3. Triangolo di asterischi
-   Scrivi un ciclo for che stampi in console il seguente pattern:
-   *
-   **
-   ***
-   ****
-   *****
+/* 
+3. Tabellina del 5
+   Scrivi un ciclo for che stampi la tabellina del 5, dalla moltiplicazione per 1 fino a 10.
+   Esempio output: 
+   5 x 1 = 5
+   5 x 2 = 10
+   ...
+   5 x 10 = 50
 */
 
+const number = 5;
 
+for (let i = 1; i <= 10; i++) {
+
+   console.log(`${number} x ${i} = ${number * i}`);
+}
 
 
 // =======================================
