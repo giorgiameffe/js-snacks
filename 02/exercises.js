@@ -180,14 +180,14 @@ const users = [
    { name: "Antonio", age: 30 }
 ];
 
-
-
+const filteredUsers = users.filter(user => user.age >= 18);
+console.log(filteredUsers);
 
 
 /*
 12. Cerca utente per nome (con .find())
-    Hai un array di oggetti con nome ed email.
-    Scrivi una funzione findUser(nome) che ritorni l'oggetto utente con quel nome usando .find().
+    Hai un array di oggetti con name ed email.
+    Scrivi una funzione findUser(name) che ritorni l'oggetto utente con quel nome usando .find().
 */
 
 {
@@ -196,4 +196,5 @@ const users = [
       { name: "Giulia", email: "giulia@example.com" },
       { name: "Marco", email: "marco@example.com" }
    ];
+
 }
