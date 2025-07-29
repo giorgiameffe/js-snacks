@@ -126,7 +126,12 @@ console.log(isEven(7));
    Usa .map() per creare un nuovo array in cui ogni elemento è il doppio di quello originale.
 */
 
+{
+   const numbers = [2, 7, 5, 8, 3];
 
+   const doubledNumbers = numbers.map(number => number * 2);
+   console.log(doubledNumbers);
+}
 
 
 /*
