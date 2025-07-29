@@ -56,7 +56,6 @@ for (let i = 1; i <= 10; i++) {
    Crea una funzione che accetta due numeri come parametri e restituisce la loro somma.
 */
 
-
 function somma(num1, num2) {
 
    return num1 + num2;
@@ -66,11 +65,17 @@ console.log(somma(10, 7));
 
 
 /*
-5. Funzione isPari(numero)
+5. Funzione isEven(numero)
    Scrivi una funzione che ritorni true se il numero passato è pari, altrimenti false.
 */
 
+function isEven(num) {
 
+   return num % 2 === 0;
+}
+
+console.log(isEven(4));
+console.log(isEven(7));
 
 
 /*
@@ -78,7 +83,25 @@ console.log(somma(10, 7));
    Crea una funzione che prende in input un array di numeri e ritorna la media aritmetica.
 */
 
+{
+   const numbers = [1, 2, 3, 4, 5, 6];
 
+   function average(array) {
+
+      let sum = 0;
+
+      for (let i = 0; i < array.length; i++) {
+
+         sum += array[i];
+
+      }
+
+      const average = sum / array.length;
+      return average;
+   }
+
+   console.log(average(numbers));
+}
 
 
 // =======================================
@@ -86,15 +109,7 @@ console.log(somma(10, 7));
 // =======================================
 
 /*
-7. Trova il numero massimo in un array
-   Dato un array di numeri, trova il numero più grande usando un ciclo oppure Math.max().
-*/
-
-
-
-
-/*
-8. Filtra numeri pari
+7. Filtra numeri pari
    Usa .filter() per creare un nuovo array che contenga solo i numeri pari di un array di partenza.
 */
 
@@ -102,7 +117,7 @@ console.log(somma(10, 7));
 
 
 /*
-9. Moltiplica per 2 ogni elemento
+8. Moltiplica per 2 ogni elemento
    Usa .map() per creare un nuovo array in cui ogni elemento è il doppio di quello originale.
 */
 
@@ -110,7 +125,7 @@ console.log(somma(10, 7));
 
 
 /*
-10. Somma tutti gli elementi
+9. Somma tutti gli elementi
     Usa .reduce() per calcolare la somma di tutti gli elementi in un array numerico.
 */
 
@@ -122,7 +137,7 @@ console.log(somma(10, 7));
 // =======================================
 
 /*
-11. Oggetto persona
+10. Oggetto persona
     Crea un oggetto chiamato persona con le proprietà: firstname, lastname, age.
     Stampa una frase come: "Ciao, mi chiamo Mario Rossi e ho 30 anni".
 */
@@ -131,7 +146,7 @@ console.log(somma(10, 7));
 
 
 /*
-12. Filtro utenti maggiorenni
+11. Filtro utenti maggiorenni
     Dato un array di oggetti con name ed age, usa .filter() per ottenere un nuovo array con solo gli utenti maggiorenni.
 */
 
@@ -144,7 +159,7 @@ const users = [
 
 
 /*
-13. Cerca utente per nome (con .find())
+12. Cerca utente per nome (con .find())
     Hai un array di oggetti con nome ed email.
     Scrivi una funzione findUser(nome) che ritorni l'oggetto utente con quel nome usando .find().
 */
