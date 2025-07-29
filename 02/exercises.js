@@ -113,7 +113,12 @@ console.log(isEven(7));
    Usa .filter() per creare un nuovo array che contenga solo i numeri pari di un array di partenza.
 */
 
+{
+   const numbers = [3, 5, 7, 8, 2, 12];
 
+   const evenNumebers = numbers.filter(number => number % 2 === 0);
+   console.log(evenNumebers);
+}
 
 
 /*
