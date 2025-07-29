@@ -57,6 +57,12 @@ for (let i = 1; i <= 10; i++) {
 */
 
 
+function somma(num1, num2) {
+
+   return num1 + num2;
+}
+
+console.log(somma(10, 7));
 
 
 /*
