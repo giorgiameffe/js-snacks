@@ -7,7 +7,9 @@
    Scrivi un ciclo for che calcoli e stampi la somma di tutti i numeri da 1 a 100.
 */
 
-
+for (let i = 1; i <= 100; i++) {
+   console.log(i);
+}
 
 
 /* 
@@ -114,9 +116,9 @@
 */
 
 const users = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 17 },
-    { name: "Carla", age: 30 }
+   { name: "Alice", age: 25 },
+   { name: "Bob", age: 17 },
+   { name: "Carla", age: 30 }
 ];
 
 
@@ -128,10 +130,10 @@ const users = [
 */
 
 {
-    const users = [
-        { name: "Luca", email: "luca@example.com" },
-        { name: "Giulia", email: "giulia@example.com" },
-        { name: "Marco", email: "marco@example.com" }
-    ];
+   const users = [
+      { name: "Luca", email: "luca@example.com" },
+      { name: "Giulia", email: "giulia@example.com" },
+      { name: "Marco", email: "marco@example.com" }
+   ];
 }
 
