@@ -128,3 +128,34 @@ const totPriceAvailableProducts = productStock.filter(product => product.inStock
     }, 0)
 
 console.log(totPriceAvailableProducts);
+
+
+// Esercizio 10: Stampare nomi di prodotti scontati
+// Consegna: Filtra i prodotti con prezzo >= 100, applica uno sconto del 20%,
+// poi stampa nome e nuovo prezzo in console.
+
+const items = [
+    {
+        name: "Laptop",
+        price: 1000
+    },
+    {
+        name: "Stampante",
+        price: 80
+    },
+    {
+        name: "TV",
+        price: 500
+    }
+];
+
+const discountItems = items.filter(item => item.price >= 100)
+    .map(item => ({
+        ...item,
+        price: item.price * 0.8
+    }))
+
+discountItems.forEach(item => {
+
+    console.log(`Nome: ${item.name}, Prezzo: ${item.price}`)
+})
