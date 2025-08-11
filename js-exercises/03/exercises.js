@@ -61,3 +61,9 @@ console.log(productsName);
 // ====================
 // Consegna: Usando .reduce(), calcola la somma dei prezzi di tutti i prodotti.
 
+const totalPrice = products.reduce((acc, product) => {
+
+    return acc + product.price;
+}, 0)
+
+console.log(totalPrice);
