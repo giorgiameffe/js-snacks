@@ -71,3 +71,30 @@ console.log(foundNumber);
 
 const verifyNegativeNumbers = numbers.some(number => number < 0);
 console.log(verifyNegativeNumbers);
+
+
+// Esercizio 8: Studenti con nomi in maiuscolo e voti alti
+// Consegna: Ottieni solo gli studenti con voto >= 7 e trasforma il loro nome in maiuscolo.
+
+const studentsList = [
+    {
+        name: "Luca",
+        grade: 8
+    },
+    {
+        name: "Marco",
+        grade: 6
+    },
+    {
+        name: "Sara",
+        grade: 9
+    },
+    {
+        name: "Anna",
+        grade: 5
+    }
+];
+
+const goodStudents = studentsList.filter(student => student.grade >= 7)
+    .map(student => student.name.toUpperCase());
+console.log(goodStudents);
