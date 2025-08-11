@@ -1,7 +1,7 @@
 // Esercizio 1: Filtrare numeri pari
 // Consegna: Dato un array di numeri, crea un nuovo array che contenga solo i numeri pari usando .filter()
 
-const numbers = [12, 3, 28, 6, 8, 17];
+const numbers = [12, 3, 28, 6, 8, 23];
 
 const evenNumbers = numbers.filter(number => number % 2 === 0);
 console.log(evenNumbers);
@@ -62,9 +62,12 @@ console.log(totalPrice);
 // Esercizio 6: Trovare un elemento
 // Consegna: Usa .find() per ottenere il primo numero maggiore di 20 nell'array.
 
-{
-    const numbers = [24, 8, 17, 25];
+const foundNumber = numbers.find(number => number > 20);
+console.log(foundNumber);
 
-    const foundNumber = numbers.find(number => number > 20);
-    console.log(foundNumber);
-}
+
+// Esercizio 7: Controllare se un valore esiste
+// Consegna: Usa .some() per verificare se nell'array ci sono numeri negativi.
+
+const verifyNegativeNumbers = numbers.some(number => number < 0);
+console.log(verifyNegativeNumbers);
