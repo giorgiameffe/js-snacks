@@ -14,8 +14,12 @@ console.log(evenNumbers);
 // ====================
 // Consegna: Usando .reduce(), calcola la somma di tutti i numeri dell'array.
 
+const sumNumbers = numbers.reduce((acc, currentValue) => {
 
+    return acc + currentValue;
+}, 0)
 
+console.log(sumNumbers);
 
 
 // ====================
