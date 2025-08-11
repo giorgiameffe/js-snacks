@@ -98,3 +98,33 @@ const studentsList = [
 const goodStudents = studentsList.filter(student => student.grade >= 7)
     .map(student => student.name.toUpperCase());
 console.log(goodStudents);
+
+
+// Esercizio 9: Somma prezzi prodotti disponibili
+// Consegna: Filtra i prodotti disponibili e calcola la somma totale dei loro prezzi.
+
+const productStock = [
+    {
+        name: "Tablet",
+        price: 200,
+        inStock: true
+    },
+    {
+        name: "Telefono",
+        price: 350,
+        inStock: false
+    },
+    {
+        name: "Caricatore",
+        price: 20,
+        inStock: true
+    }
+];
+
+const totPriceAvailableProducts = productStock.filter(product => product.inStock)
+    .reduce((acc, product) => {
+
+        return acc + product.price
+    }, 0)
+
+console.log(totPriceAvailableProducts);
