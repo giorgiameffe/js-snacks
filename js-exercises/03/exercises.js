@@ -52,6 +52,9 @@ console.log(filteredProducts);
 // ====================
 // Consegna: Usando .map(), crea un array contenente solo i nomi dei prodotti.
 
+const productsName = products.map(product => product.name);
+console.log(productsName);
+
 
 // ====================
 // Esercizio 5: Calcolare il prezzo totale
