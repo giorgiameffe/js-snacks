@@ -28,8 +28,23 @@ console.log(sumNumbers);
 // Consegna: Dato un array di oggetti prodotto con proprietà nome e prezzo,
 // restituisci solo i prodotti con prezzo superiore a 50.
 
+const products = [
+    {
+        name: "Boardgame",
+        price: 50
+    },
+    {
+        name: "Computer",
+        price: 500
+    },
+    {
+        name: "Table",
+        price: 100
+    }
+];
 
-
+const filteredProducts = products.filter(product => product.price > 50);
+console.log(filteredProducts);
 
 
 // ====================
