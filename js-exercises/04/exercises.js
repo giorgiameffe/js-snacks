@@ -21,6 +21,23 @@ console.log(sum);
 // Esercizio 2 - Conta i numeri pari
 // Consegna: Dato un array di numeri, conta quanti sono pari usando un ciclo for.
 
+{
+    const numbers = [1, 4, 6, 9, 12];
+
+    let count = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        const currentNumber = numbers[i];
+
+        if (currentNumber % 2 === 0) {
+            count++
+        }
+    }
+
+    console.log(count);
+}
+
 
 // ======================
 // 🔧 METODI BASE SUGLI ARRAY
