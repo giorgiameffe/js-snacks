@@ -46,6 +46,13 @@ console.log(sum);
 // Esercizio 3 - Filtra numeri maggiori di 5
 // Consegna: Dato un array di numeri, crea un nuovo array contenente solo quelli maggiori di 5.
 
+{
+    const numbers = [2, 8, 4, 10, 1];
+
+    const filteredNumbers = numbers.filter(number => number > 5);
+    console.log(filteredNumbers);
+}
+
 // Esercizio 4 - Doppia i valori
 // Consegna: Dato un array di numeri, crea un nuovo array dove ogni numero è raddoppiato.
 
