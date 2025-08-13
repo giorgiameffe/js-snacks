@@ -56,6 +56,13 @@ console.log(sum);
 // Esercizio 4 - Doppia i valori
 // Consegna: Dato un array di numeri, crea un nuovo array dove ogni numero è raddoppiato.
 
+{
+    const numbers = [3, 5, 7, 9];
+
+    const doubledNumbers = numbers.map(number => number * 2);
+    console.log(doubledNumbers);
+}
+
 // Esercizio 5 - Trova il massimo
 // Consegna: Dato un array di numeri, trova il valore massimo usando Math.max.
 
