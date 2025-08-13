@@ -5,6 +5,19 @@
 // Esercizio 1 - Somma degli elementi di un array
 // Consegna: Dato un array di numeri, calcola la somma di tutti i valori usando un ciclo for.
 
+const numbers = [3, 7, 2, 9];
+
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+
+    const currentNumber = numbers[i];
+
+    sum += currentNumber;
+}
+
+console.log(sum);
+
 // Esercizio 2 - Conta i numeri pari
 // Consegna: Dato un array di numeri, conta quanti sono pari usando un ciclo for.
 
