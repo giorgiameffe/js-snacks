@@ -66,6 +66,13 @@ console.log(sum);
 // Esercizio 5 - Trova il massimo
 // Consegna: Dato un array di numeri, trova il valore massimo usando Math.max.
 
+{
+    const numbers = [10, 25, 7, 32];
+
+    const maxNumber = Math.max(...numbers);
+    console.log(maxNumber);
+}
+
 
 // ======================
 // 🧩 METODI CONCATENATI
