@@ -137,6 +137,30 @@ console.log(peopleNames);
 // Esercizio 9 - Filtra maggiorenni
 // Consegna: Dato un array di persone, crea un array con solo i maggiorenni.
 
+{
+    const people = [
+        {
+            name: 'John',
+            age: 28
+        },
+        {
+            name: 'Alice',
+            age: 34
+        },
+        {
+            name: 'Martyn',
+            age: 16
+        },
+        {
+            name: 'Sophia',
+            age: 14
+        }
+    ];
+
+    const adults = people.filter(person => person.age >= 18);
+    console.log(adults);
+}
+
 
 // ======================
 // 🛠️ MANIPOLAZIONE AVANZATA
