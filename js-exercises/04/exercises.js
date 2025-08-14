@@ -162,9 +162,33 @@ console.log(peopleNames);
 }
 
 
-// ======================
-// 🛠️ MANIPOLAZIONE AVANZATA
-// ======================
+// Esercizio 10 — Somma delle età
+// Consegna: Dato un array di oggetti `person`, calcola la somma totale delle loro età.
 
-// Esercizio 10 - Conta le occorrenze
-// Consegna: Dato un array di stringhe, conta quante volte appare ogni elemento.
+{
+    const people = [
+        {
+            name: 'John',
+            age: 28
+        },
+        {
+            name: 'Alice',
+            age: 34
+        },
+        {
+            name: 'Martyn',
+            age: 16
+        },
+        {
+            name: 'Sophia',
+            age: 14
+        }
+    ];
+
+    const sumAge = people.reduce((acc, person) => {
+
+        return acc + person.age;
+    }, 0)
+
+    console.log(sumAge);
+}
