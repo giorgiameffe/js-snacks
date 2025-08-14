@@ -81,6 +81,17 @@ console.log(sum);
 // Esercizio 6 - Somma dei numeri pari
 // Consegna: Dato un array di numeri, calcola la somma solo dei numeri pari usando filter e reduce.
 
+{
+    const numbers = [2, 7, 4, 9];
+
+    const sumEvenNumbers = numbers.filter(number => number % 2 === 0)
+        .reduce((acc, currentValue) => {
+            return acc + currentValue
+        })
+
+    console.log(sumEvenNumbers);
+}
+
 // Esercizio 7 - Parole in maiuscolo ordinate
 // Consegna: Dato un array di parole, filtra quelle lunghe più di 3 lettere, trasformale in maiuscolo e ordinane l’elenco.
 
