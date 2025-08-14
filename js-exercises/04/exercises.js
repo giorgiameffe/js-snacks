@@ -95,6 +95,14 @@ console.log(sum);
 // Esercizio 7 - Parole in maiuscolo ordinate
 // Consegna: Dato un array di parole, filtra quelle lunghe più di 3 lettere, trasformale in maiuscolo e ordinane l’elenco.
 
+const words = ['Tre', 'Quattro', 'Cinque'];
+
+const wordsOrderedList = words.filter(word => word.length > 3)
+    .map(word => word.toUpperCase())
+    .sort();
+
+console.log(wordsOrderedList);
+
 
 // ======================
 // 👥 ARRAY DI OGGETTI
