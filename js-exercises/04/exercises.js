@@ -111,6 +111,28 @@ console.log(wordsOrderedList);
 // Esercizio 8 - Estrai i nomi
 // Consegna: Dato un array di oggetti persona, estrai un array contenente solo i loro nomi.
 
+const people = [
+    {
+        name: 'John',
+        age: 28
+    },
+    {
+        name: 'Alice',
+        age: 34
+    },
+    {
+        name: 'Michael',
+        age: 22
+    },
+    {
+        name: 'Sophia',
+        age: 30
+    }
+];
+
+const peopleNames = people.map(person => person.name);
+console.log(peopleNames);
+
 
 // Esercizio 9 - Filtra maggiorenni
 // Consegna: Dato un array di persone, crea un array con solo i maggiorenni.
