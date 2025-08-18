@@ -37,7 +37,7 @@ Questa raccolta di esercizi è pensata per aiutarti a ripassare i concetti chiav
 ## 🛠️ Come usare questi esercizi
 
 1. Crea un file chiamato `exercises.js`
-2. Incolla il contenuto degli esercizi al suo interno
+2. Copia il contenuto degli esercizi al suo interno
 3. Apri il file con **VS Code** o un qualsiasi editor JavaScript
 4. Esegui ogni esercizio uno per uno usando `console.log()` per verificare i risultati
 5. Per testare il codice, puoi aprire la **console del browser**
