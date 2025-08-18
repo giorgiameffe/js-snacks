@@ -61,7 +61,6 @@ for (let i = 0; i < fruits.length; i++) {
 // 6. Interrompi il ciclo con break
 // CONSEGNA: Scrivi un ciclo for che conta da 1 a 10 ma si ferma quando arriva a 5.
 
-
 for (let i = 1; i <= 10; i++) {
 
     console.log(i);
@@ -73,3 +72,7 @@ for (let i = 1; i <= 10; i++) {
 // CONSEGNA: Scrivi un ciclo for che stampi i quadrati dei numeri da 1 a 10.
 // (es: 1, 4, 9, 16, ...)
 
+for (let i = 1; i <= 10; i++) {
+
+    console.log(i * i);
+}
