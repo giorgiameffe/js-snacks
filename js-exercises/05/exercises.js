@@ -6,6 +6,11 @@
 // 1. Stampa i numeri da 0 a 4
 // CONSEGNA: Scrivi un ciclo for che stampi i numeri da 0 a 4.
 
+for (let i = 0; i <= 4; i++) {
+
+    console.log(i);
+}
+
 
 // 2. Fai un countdown da 5 a 1
 // CONSEGNA: Scrivi un ciclo for che conti da 5 fino a 1.
