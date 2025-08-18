@@ -20,8 +20,16 @@ for (let i = 5; i >= 1; i--) {
     console.log(i);
 }
 
+
 // 3. Stampa solo i numeri pari da 0 a 10
 // CONSEGNA: Scrivi un ciclo for che stampi solo i numeri pari da 0 a 10.
+
+for (let i = 0; i <= 10; i++) {
+
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
 
 
 // 4. Calcola la somma dei numeri da 1 a 5
