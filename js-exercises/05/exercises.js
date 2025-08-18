@@ -62,6 +62,13 @@ for (let i = 0; i < fruits.length; i++) {
 // CONSEGNA: Scrivi un ciclo for che conta da 1 a 10 ma si ferma quando arriva a 5.
 
 
+for (let i = 1; i <= 10; i++) {
+
+    console.log(i);
+    if (i === 5) break;
+}
+
+
 // 7. Trova il quadrato dei primi 10 numeri
 // CONSEGNA: Scrivi un ciclo for che stampi i quadrati dei numeri da 1 a 10.
 // (es: 1, 4, 9, 16, ...)
