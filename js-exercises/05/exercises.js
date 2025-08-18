@@ -49,6 +49,14 @@ console.log(sum);
 // 5. Stampa tutti gli elementi di un array
 // CONSEGNA: Dato l’array ["🍎", "🍌", "🍇", "🍑"], stampane gli elementi uno per uno.
 
+const fruits = ["🍎", "🍌", "🍇", "🍑"];
+
+for (let i = 0; i < fruits.length; i++) {
+
+    const currentFruit = fruits[i];
+    console.log(currentFruit);
+}
+
 
 // 6. Interrompi il ciclo con break
 // CONSEGNA: Scrivi un ciclo for che conta da 1 a 10 ma si ferma quando arriva a 5.
