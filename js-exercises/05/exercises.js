@@ -36,6 +36,15 @@ for (let i = 0; i <= 10; i++) {
 // CONSEGNA: Scrivi un ciclo for che calcoli la somma dei numeri da 1 a 5
 // e alla fine stampi il risultato.
 
+let sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+
+    sum += i;
+}
+
+console.log(sum);
+
 
 // 5. Stampa tutti gli elementi di un array
 // CONSEGNA: Dato l’array ["🍎", "🍌", "🍇", "🍑"], stampane gli elementi uno per uno.
