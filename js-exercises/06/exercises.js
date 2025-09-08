@@ -30,6 +30,9 @@ console.log(filteredStudents);
 
 // 5. Trova Marta (oggetto con nome: "Marta")
 
+const findStudent = students.find(student => student.name === 'Marta');
+console.log(findStudent);
+
 // 6. Calcola la somma dei voti di Alice
 
 // 7. Crea un array di oggetti con { nome, mediaVoti } per ogni studente
