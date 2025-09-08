@@ -45,6 +45,8 @@ console.log(students[0].votes)
 
 // 8. Stampa il nome dello studente più giovane
 
+const yougestStudent = students.find((student, min) => student.age < min.age ? student : min);
+console.log(yougestStudent);
 
 // 9. Controlla se esiste uno studente di 19 anni
 
