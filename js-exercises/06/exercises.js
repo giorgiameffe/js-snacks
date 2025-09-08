@@ -39,10 +39,15 @@ const votesAlice = students.find(student => student.name === 'Alice').votes;
 const sumVotes = votesAlice.reduce((accumulator, currentValue) => accumulator += currentValue, 0);
 console.log(sumVotes);
 
-// 7. Crea un array di oggetti con { nome, mediaVoti } per ogni studente
+// 7. Stampa solo i voti del primo studente
 
-// 8. Trova lo studente con la media più alta
+console.log(students[0].votes)
 
-// 9. Verifica se tutti gli studenti hanno almeno un voto ≥ 18
+// 8. Stampa il nome dello studente più giovane
 
-// 10. Conta quanti studenti hanno media maggiore o uguale a 28
+
+// 9. Controlla se esiste uno studente di 19 anni
+
+
+// 10. Conta quanti studenti hanno almeno un voto pari a 30
+
