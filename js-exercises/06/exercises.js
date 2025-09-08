@@ -25,6 +25,9 @@ console.log(studentsName);
 
 // 4. Filtra gli studenti maggiorenni (età ≥ 21)
 
+const filteredStudents = students.filter(student => student.age >= 21);
+console.log(filteredStudents);
+
 // 5. Trova Marta (oggetto con nome: "Marta")
 
 // 6. Calcola la somma dei voti di Alice
