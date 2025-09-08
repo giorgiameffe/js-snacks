@@ -20,6 +20,9 @@ console.log(students[students.length - 1].age);
 
 // 3. Crea un array contenente solo i nomi degli studenti
 
+const studentsName = students.map(student => student.name);
+console.log(studentsName);
+
 // 4. Filtra gli studenti maggiorenni (età ≥ 21)
 
 // 5. Trova Marta (oggetto con nome: "Marta")
