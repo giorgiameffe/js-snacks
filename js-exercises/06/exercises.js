@@ -35,6 +35,10 @@ console.log(findStudent);
 
 // 6. Calcola la somma dei voti di Alice
 
+const votesAlice = students.find(student => student.name === 'Alice').votes;
+const sumVotes = votesAlice.reduce((accumulator, currentValue) => accumulator += currentValue, 0);
+console.log(sumVotes);
+
 // 7. Crea un array di oggetti con { nome, mediaVoti } per ogni studente
 
 // 8. Trova lo studente con la media più alta
