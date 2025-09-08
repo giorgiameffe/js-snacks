@@ -50,6 +50,9 @@ console.log(yougestStudent);
 
 // 9. Controlla se esiste uno studente di 19 anni
 
+const youngStudent = students.some(student => student.age === 19);
+console.log(youngStudent);
+
 
 // 10. Conta quanti studenti hanno almeno un voto pari a 30
 
