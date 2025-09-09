@@ -43,6 +43,15 @@ students.forEach(student => console.log(`Ciao sono ${student.name} e ho ${studen
 
 // 7. Con .forEach(), calcola la somma totale delle età di tutti gli studenti.
 
+let sum = 0;
+
+students.forEach(student => {
+
+    sum += student.age;
+})
+
+console.log(sum);
+
 
 
 // 8. Con .length, mostra il numero totale di studenti nell'array.
