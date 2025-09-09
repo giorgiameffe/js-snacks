@@ -29,7 +29,8 @@ console.log(filteredStudents);
 
 // 4. Con .filter(), seleziona tutti gli studenti che hanno almeno un voto pari a 30.
 
-
+const goodStudents = students.filter(student => student.votes.includes(30));
+console.log(goodStudents);
 
 // 5. Usa .map() per generare un array con solo i nomi degli studenti.
 
