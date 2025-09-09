@@ -1,10 +1,10 @@
 // 🔹 ARRAY DI PARTENZA
 
 const students = [
-    { name: "Alice", age: 20, votes: [28, 30, 27] },
-    { name: "Luca", age: 22, votes: [25, 26, 24] },
-    { name: "Marta", age: 19, votes: [30, 30, 29] },
-    { name: "Giorgio", age: 21, votes: [18, 22, 20] }
+  { name: "Mario", age: 20, course: "Informatica", votes: [28, 30, 26] },
+  { name: "Elene", age: 22, course: "Matematica", votes: [25, 27, 29] },
+  { name: "Veronica", age: 19, course: "Fisica", votes: [30, 30, 28] },
+  { name: "Giorgia", age: 21, course: "Informatica", votes: [24, 25, 26] }
 ];
 
 // ================================
@@ -18,7 +18,8 @@ console.log(findStudent);
 
 // 2. Con .find(), individua il primo studente iscritto al corso di Informatica.
 
-
+const firstStudent = students.find(student => student.course === 'Informatica');
+console.log(firstStudent);
 
 // 3. Con .filter(), crea un nuovo array contenente solo gli studenti
 //    di età pari o superiore a 21 anni.
@@ -62,12 +63,6 @@ console.log(findStudent);
 // ================================
 
 // Riutilizziamo l'array studenti
-const studenti = [
-  { nome: "Luca", eta: 20, corso: "Informatica", voti: [28, 30, 26] },
-  { nome: "Sara", eta: 22, corso: "Matematica", voti: [25, 27, 29] },
-  { nome: "Marco", eta: 19, corso: "Fisica", voti: [30, 30, 28] },
-  { nome: "Giulia", eta: 21, corso: "Informatica", voti: [24, 25, 26] }
-];
 
 
 // 1. Usa un ciclo for per stampare i nomi di tutti gli studenti.
