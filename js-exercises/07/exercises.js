@@ -24,7 +24,8 @@ console.log(firstStudent);
 // 3. Con .filter(), crea un nuovo array contenente solo gli studenti
 //    di età pari o superiore a 21 anni.
 
-
+const filteredStudents = students.filter(student => student.age >= 21 );
+console.log(filteredStudents);
 
 // 4. Con .filter(), seleziona tutti gli studenti che hanno almeno un voto pari a 30.
 
