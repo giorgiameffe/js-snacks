@@ -62,6 +62,9 @@ students.forEach(student => console.log(`${student.name} ha ricevuto ${student.v
 
 // 10. Combina .filter() e .length per contare quanti studenti fanno Informatica.
 
+const itStudents = students.filter(student => student.course === 'Informatica');
+console.log('Numero studenti IT:', itStudents.length);
+
 
 
 // ================================
