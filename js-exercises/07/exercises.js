@@ -50,13 +50,11 @@ students.forEach(student => {
     sum += student.age;
 })
 
-console.log(sum);
-
-
+console.log('Somma età:', sum);
 
 // 8. Con .length, mostra il numero totale di studenti nell'array.
 
-
+console.log('Numero studenti:', students.length);
 
 // 9. Con .length, stampa per ogni studente quanti voti ha ricevuto.
 
