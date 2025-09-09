@@ -58,7 +58,7 @@ console.log('Numero studenti:', students.length);
 
 // 9. Con .length, stampa per ogni studente quanti voti ha ricevuto.
 
-
+students.forEach(student => console.log(`${student.name} ha ricevuto ${student.votes.length} voti`))
 
 // 10. Combina .filter() e .length per contare quanti studenti fanno Informatica.
 
