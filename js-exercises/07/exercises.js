@@ -34,7 +34,8 @@ console.log(goodStudents);
 
 // 5. Usa .map() per generare un array con solo i nomi degli studenti.
 
-
+const studentsNames = students.map(student => student.name);
+console.log(studentsNames);
 
 // 6. Con .map(), crea un array di oggetti che contengano nome e media voti di ogni studente.
 
