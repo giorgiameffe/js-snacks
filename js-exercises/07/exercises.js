@@ -37,27 +37,23 @@ console.log(goodStudents);
 const studentsNames = students.map(student => student.name);
 console.log(studentsNames);
 
-// 6. Con .map(), crea un array di oggetti che contengano nome e media voti di ogni studente.
+// 6. Con .forEach(), stampa una frase con nome ed età di ogni studente.
+
+students.forEach(student => console.log(`Ciao sono ${student.name} e ho ${student.age} anni`));
+
+// 7. Con .forEach(), calcola la somma totale delle età di tutti gli studenti.
 
 
 
-// 7. Con .forEach(), stampa una frase con nome ed età di ogni studente.
+// 8. Con .length, mostra il numero totale di studenti nell'array.
 
 
 
-// 8. Con .forEach(), calcola la somma totale delle età di tutti gli studenti.
+// 9. Con .length, stampa per ogni studente quanti voti ha ricevuto.
 
 
 
-// 9. Con .length, mostra il numero totale di studenti nell'array.
-
-
-
-// 10. Con .length, stampa per ogni studente quanti voti ha ricevuto.
-
-
-
-// 11. Combina .filter() e .length per contare quanti studenti fanno Informatica.
+// 10. Combina .filter() e .length per contare quanti studenti fanno Informatica.
 
 
 
