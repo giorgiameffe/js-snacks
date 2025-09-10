@@ -40,6 +40,9 @@ console.log(moviesRatingNine);
 
 // 6. Usa .find() per trovare il primo film uscito prima del 2000.
 
+const firstOldMovie = movies.find(movie => movie.year < 2000);
+console.log(firstOldMovie);
+
 // 7. Usa .forEach() per stampare: "Titolo ha un voto di X" per ogni film.
 
 // 8. Usa .forEach() per stampare il numero totale dei film nell'array.
