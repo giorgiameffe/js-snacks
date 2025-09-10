@@ -15,6 +15,9 @@ const movies = [
 
 // 1. Usa .map() per creare un array con solo i titoli dei film.
 
+const moviesTitles = movies.map(movie => movie.title);
+console.log(moviesTitles);
+
 // 2. Usa .map() per creare un array di stringhe in formato: "Titolo - Anno".
 
 // 3. Usa .filter() per ottenere i film usciti dopo il 2010.
