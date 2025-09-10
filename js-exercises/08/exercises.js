@@ -30,6 +30,9 @@ console.log(recentMovies);
 
 // 4. Usa .filter() per ottenere tutti i film di genere "Crime".
 
+const crimeMovies = movies.filter(movie => movie.genre === 'Crime');
+console.log(crimeMovies);
+
 // 5. Usa .find() per trovare il film con rating 9.0.
 
 // 6. Usa .find() per trovare il primo film uscito prima del 2000.
