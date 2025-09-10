@@ -45,6 +45,8 @@ console.log(firstOldMovie);
 
 // 7. Usa .forEach() per stampare: "Titolo ha un voto di X" per ogni film.
 
+movies.forEach(movie => console.log(`${movie.title} ha un voto di ${movie.rating}`));
+
 // 8. Usa .forEach() per stampare il numero totale dei film nell'array.
 
 // 9. Usa .filter() e .map() per creare un array con i titoli dei film con rating > 8.8.
