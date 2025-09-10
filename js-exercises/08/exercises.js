@@ -25,6 +25,9 @@ console.log(stringArray);
 
 // 3. Usa .filter() per ottenere i film usciti dopo il 2010.
 
+const recentMovies = movies.filter(movie => movie.year > 2010);
+console.log(recentMovies);
+
 // 4. Usa .filter() per ottenere tutti i film di genere "Crime".
 
 // 5. Usa .find() per trovare il film con rating 9.0.
