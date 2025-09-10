@@ -20,6 +20,9 @@ console.log(moviesTitles);
 
 // 2. Usa .map() per creare un array di stringhe in formato: "Titolo - Anno".
 
+const stringArray = movies.map(movie => `${movie.title} - ${movie.year}`);
+console.log(stringArray);
+
 // 3. Usa .filter() per ottenere i film usciti dopo il 2010.
 
 // 4. Usa .filter() per ottenere tutti i film di genere "Crime".
