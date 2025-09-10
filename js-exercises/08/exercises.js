@@ -66,3 +66,6 @@ const goodMoviesTitles = movies
 console.log(goodMoviesTitles);
 
 // 10. Usa .filter() per ottenere i film con titoli lunghi almeno 12 caratteri.
+
+const longMoviesTitles = movies.filter(movie => movie.title.length >= 12);
+console.log(longMoviesTitles);
