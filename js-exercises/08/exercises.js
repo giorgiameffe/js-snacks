@@ -35,6 +35,9 @@ console.log(crimeMovies);
 
 // 5. Usa .find() per trovare il film con rating 9.0.
 
+const moviesRatingNine = movies.find(movie => movie.rating === 9.0);
+console.log(moviesRatingNine);
+
 // 6. Usa .find() per trovare il primo film uscito prima del 2000.
 
 // 7. Usa .forEach() per stampare: "Titolo ha un voto di X" per ogni film.
