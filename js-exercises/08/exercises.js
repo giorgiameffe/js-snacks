@@ -59,4 +59,10 @@ console.log('Numero di film:', count);
 
 // 9. Usa .filter() e .map() per creare un array con i titoli dei film con rating > 8.8.
 
+const goodMoviesTitles = movies
+    .filter(movie => movie.rating > 8.8)
+    .map(movie => movie.title);
+
+console.log(goodMoviesTitles);
+
 // 10. Usa .filter() per ottenere i film con titoli lunghi almeno 12 caratteri.
