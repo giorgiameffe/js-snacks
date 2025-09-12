@@ -35,7 +35,8 @@ console.log(carsYears);
 
 // 4. Ottenere solo le auto con prezzo maggiore di 20000€
 
-
+const expensiveCars = cars.filter(car => car.price > 20000);
+console.log(expensiveCars);
 
 // 5. Ottenere le auto costruite dopo il 2020
 
