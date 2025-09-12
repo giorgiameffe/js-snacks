@@ -68,6 +68,7 @@ console.log(mediumCarPrice);
 
 // 9. Stampare in console tutti i modelli uno per uno
 
+cars.forEach(car => console.log(car.model));
 
 // 10. Stampare in console una frase per ciascuna auto, tipo:
 // "La BMW X3 costa 38000€"
