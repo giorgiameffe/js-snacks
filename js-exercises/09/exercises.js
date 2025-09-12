@@ -59,14 +59,14 @@ console.log(fiatCar);
 
 // 8. Trovare l’auto con prezzo esatto 15000€
 
-
+const mediumCarPrice = cars.find(car => car.price === 15000);
+console.log(mediumCarPrice);
 
 // ----------------------
 // FOREACH
 // ----------------------
 
 // 9. Stampare in console tutti i modelli uno per uno
-
 
 
 // 10. Stampare in console una frase per ciascuna auto, tipo:
