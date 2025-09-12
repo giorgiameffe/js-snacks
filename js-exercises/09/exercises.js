@@ -72,3 +72,5 @@ cars.forEach(car => console.log(car.model));
 
 // 10. Stampare in console una frase per ciascuna auto, tipo:
 // "La BMW X3 costa 38000€"
+
+cars.forEach(car => console.log(`La ${car.brand} ${car.model} costa ${car.price}€`))
