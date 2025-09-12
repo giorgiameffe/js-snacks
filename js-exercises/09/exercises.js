@@ -45,7 +45,8 @@ console.log(recentCars);
 
 // 6. Filtrare tutte le auto che non sono Tesla
 
-
+const noTeslaCars = cars.filter(car => car.brand !== 'Tesla');
+console.log(noTeslaCars);
 
 // ----------------------
 // FIND
