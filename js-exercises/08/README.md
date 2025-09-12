@@ -47,6 +47,7 @@ const movies = [
     { title: "Pulp Fiction", year: 1994, genre: "Crime", rating: 8.9 }
 ];
 ```
+---
 
 ## 🛠️ Come usare questi esercizi
 
