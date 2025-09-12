@@ -40,7 +40,8 @@ console.log(expensiveCars);
 
 // 5. Ottenere le auto costruite dopo il 2020
 
-
+const recentCars = cars.filter(car => car.year > 2020);
+console.log(recentCars);
 
 // 6. Filtrare tutte le auto che non sono Tesla
 
