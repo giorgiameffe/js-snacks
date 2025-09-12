@@ -15,7 +15,8 @@ const cars = [
 
 // 1. Creare un array con tutti i modelli delle auto
 
-
+const carsModels = cars.map(car => car.model);
+console.log(carsModels);
 
 // 2. Creare un array di stringhe descrittive tipo:
 // "Toyota Yaris del 2018 costa 12000€"
