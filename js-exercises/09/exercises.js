@@ -26,7 +26,8 @@ console.log(carsString);
 
 // 3. Creare un array con solo gli anni di produzione
 
-
+const carsYears = cars.map(car => car.year);
+console.log(carsYears);
 
 // ----------------------
 // FILTER
