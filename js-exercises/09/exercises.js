@@ -21,7 +21,8 @@ console.log(carsModels);
 // 2. Creare un array di stringhe descrittive tipo:
 // "Toyota Yaris del 2018 costa 12000€"
 
-
+const carsString = cars.map(car => `${car.brand} ${car.model} del ${car.year} costa ${car.price}€`);
+console.log(carsString);
 
 // 3. Creare un array con solo gli anni di produzione
 
