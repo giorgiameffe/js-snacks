@@ -1,4 +1,4 @@
-# 🚀 Esercizi JavaScript: Array di Oggetti
+# 🎓 Esercizi JavaScript: Array di Oggetti
 
 Questa raccolta di esercizi aiuta a ripassare e mettere in pratica l’uso degli **array di oggetti** in JavaScript, applicando metodi come `map`, `filter`, `find`, `reduce`, `some`, `every` e l’accesso agli elementi e alle loro proprietà.
 

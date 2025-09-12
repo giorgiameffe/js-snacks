@@ -1,4 +1,4 @@
-# 🚀 Esercizi JavaScript: Array di Oggetti e Funzioni
+# 🏫 Esercizi JavaScript: Array di Oggetti e Funzioni
 
 Questa raccolta di esercizi serve per allenarsi con **array di oggetti** in JavaScript, utilizzando i metodi `.find()`, `.filter()`, `.map()`, `.forEach()`, e le funzioni personalizzate.  
 Gli esercizi sono divisi in due sezioni: **metodi array** e **ciclo for/funzioni**.
