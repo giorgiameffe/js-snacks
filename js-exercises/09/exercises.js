@@ -54,7 +54,8 @@ console.log(noTeslaCars);
 
 // 7. Trovare l’auto con marca "Fiat"
 
-
+const fiatCar = cars.find(car => car.brand === 'Fiat');
+console.log(fiatCar);
 
 // 8. Trovare l’auto con prezzo esatto 15000€
 
