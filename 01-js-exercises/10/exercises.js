@@ -56,6 +56,9 @@ console.log('Autore del secondo libro:', secondBook['author']);
 
 // 7. Creare un array con tutti i titoli dei libri
 
+const booksTitles = books.map(book => book.title);
+console.log(booksTitles);
+
 // 8. Creare un array di stringhe descrittive tipo:
 // "Il nome della rosa di Umberto Eco, 512 pagine, rating 4.8"
 
