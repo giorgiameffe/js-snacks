@@ -32,6 +32,7 @@ console.log('Ultimo libro:', lastBook);
 const secondLastBook = books[books.length - 2];
 console.log('Penultimo libro:', secondLastBook);
 
+
 // ----------------------
 // DOT NOTATION & BRACKET NOTATION
 // ----------------------
@@ -42,6 +43,11 @@ console.log('Titolo del primo libro:', firstBook.title);
 console.log('Autore del primo libro:', firstBook.author);
 
 // 6. Stampare titolo e autore del secondo libro usando bracket notation
+
+const secondBook = books[1];
+
+console.log('Titolo del secondo libro:', secondBook['title']);
+console.log('Autore del secondo libro:', secondBook['author']);
 
 
 // ----------------------
