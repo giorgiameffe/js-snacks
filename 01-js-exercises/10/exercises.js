@@ -14,6 +14,9 @@ const books = [
 
 // 1. Quanti libri ci sono nell'array?
 
+const booksNumber = books.length;
+console.log(`Ci sono ${booksNumber} libri`);
+
 // 2. Accedere al primo libro
 
 // 3. Accedere all'ultimo libro
