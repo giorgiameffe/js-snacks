@@ -24,6 +24,9 @@ console.log(firstBook);
 
 // 3. Accedere all'ultimo libro
 
+const lastBook = books[books.length - 1];
+console.log(lastBook);
+
 // 4. Accedere al penultimo libro
 
 
