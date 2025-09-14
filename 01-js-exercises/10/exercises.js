@@ -19,6 +19,9 @@ console.log(`Ci sono ${booksNumber} libri`);
 
 // 2. Accedere al primo libro
 
+const firstBook = books[0];
+console.log(firstBook);
+
 // 3. Accedere all'ultimo libro
 
 // 4. Accedere al penultimo libro
