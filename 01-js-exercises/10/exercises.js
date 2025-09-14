@@ -71,6 +71,9 @@ console.log(stringArray);
 
 // 9. Ottenere libri con più di 300 pagine
 
+const longBooks = books.filter(book => book.pages > 300);
+console.log(longBooks);
+
 // 10. Ottenere libri pubblicati dopo il 1950
 
 // 11. Filtrare tutti i libri che non sono di Tolkien
