@@ -38,7 +38,11 @@ console.log('Penultimo libro:', secondLastBook);
 
 // 5. Stampare titolo e autore del primo libro usando dot notation
 
+console.log('Titolo del primo libro:', firstBook.title);
+console.log('Autore del primo libro:', firstBook.author);
+
 // 6. Stampare titolo e autore del secondo libro usando bracket notation
+
 
 // ----------------------
 // MAP
