@@ -62,6 +62,9 @@ console.log(booksTitles);
 // 8. Creare un array di stringhe descrittive tipo:
 // "Il nome della rosa di Umberto Eco, 512 pagine, rating 4.8"
 
+const stringArray = books.map(book => `${book.title} di ${book.author}, ${book.pages} pagine, rating ${book.rating}`);
+console.log(stringArray);
+
 // ----------------------
 // FILTER
 // ----------------------
