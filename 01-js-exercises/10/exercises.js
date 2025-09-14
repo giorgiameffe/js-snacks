@@ -76,6 +76,9 @@ console.log(longBooks);
 
 // 10. Ottenere libri pubblicati dopo il 1950
 
+const mostRecentBooks = books.filter(book => book.year > 1950);
+console.log(mostRecentBooks);
+
 // 11. Filtrare tutti i libri che non sono di Tolkien
 
 // 12. Ottenere libri con rating maggiore di 4.7
