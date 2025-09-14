@@ -20,15 +20,17 @@ console.log(`Ci sono ${booksNumber} libri`);
 // 2. Accedere al primo libro
 
 const firstBook = books[0];
-console.log(firstBook);
+console.log('Primo libro:', firstBook);
 
 // 3. Accedere all'ultimo libro
 
 const lastBook = books[books.length - 1];
-console.log(lastBook);
+console.log('Ultimo libro:', lastBook);
 
 // 4. Accedere al penultimo libro
 
+const secondLastBook = books[books.length - 2];
+console.log('Penultimo libro:', secondLastBook);
 
 // ----------------------
 // DOT NOTATION & BRACKET NOTATION
