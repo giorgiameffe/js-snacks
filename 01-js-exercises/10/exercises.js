@@ -86,6 +86,9 @@ console.log(noTolkienBooks);
 
 // 12. Ottenere libri con rating maggiore di 4.7
 
+const goodBooks = books.filter(book => book.rating > 4.7);
+console.log(goodBooks);
+
 // ----------------------
 // FIND
 // ----------------------
