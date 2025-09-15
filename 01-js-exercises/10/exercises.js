@@ -105,6 +105,9 @@ console.log(book223Pages);
 
 // 15. Trovare il primo libro con rating 4.9
 
+const firstGoodBook = books.find(book => book.rating === 4.9);
+console.log(firstGoodBook);
+
 // ----------------------
 // FOREACH
 // ----------------------
