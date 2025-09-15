@@ -81,6 +81,9 @@ console.log(mostRecentBooks);
 
 // 11. Filtrare tutti i libri che non sono di Tolkien
 
+const noTolkienBooks = books.filter(book => !book.author.includes('Tolkien'));
+console.log(noTolkienBooks);
+
 // 12. Ottenere libri con rating maggiore di 4.7
 
 // ----------------------
