@@ -131,4 +131,6 @@ books.forEach(book => console.log(`Titolo: ${book.title}, Autore: ${book.author}
 
 // 19. Stampare titolo e rating dell'ultimo libro
 
+console.log(`Titolo: ${lastBook.title}, Rating: ${lastBook.rating}`);
+
 // 20. Creare un array con i titoli dei libri pubblicati prima del 1950
