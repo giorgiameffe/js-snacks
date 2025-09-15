@@ -114,6 +114,8 @@ console.log(firstGoodBook);
 
 // 16. Stampare tutti i titoli uno per uno
 
+books.forEach(book => console.log('Titolo:', book.title));
+
 // 17. Stampare una frase per ciascun libro, tipo:
 // "Il libro 'Il Signore degli Anelli' ha 1216 pagine"
 
