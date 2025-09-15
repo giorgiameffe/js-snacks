@@ -95,6 +95,9 @@ console.log(goodBooks);
 
 // 13. Trovare il libro intitolato "1984"
 
+const book1984 = books.find(book => book.title === '1984');
+console.log(book1984);
+
 // 14. Trovare il libro con esattamente 223 pagine
 
 // 15. Trovare il primo libro con rating 4.9
