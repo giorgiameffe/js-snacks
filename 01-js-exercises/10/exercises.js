@@ -123,6 +123,8 @@ books.forEach(book => console.log(`Il libro '${book.title}' ha ${book.pages} pag
 
 // 18. Stampare "Titolo: [title], Autore: [author], Anno: [year]" per ciascun libro
 
+books.forEach(book => console.log(`Titolo: ${book.title}, Autore: ${book.author}, Anno: ${book.year}`));
+
 // ----------------------
 // MIXED EXERCISES
 // ----------------------
