@@ -100,6 +100,9 @@ console.log(book1984);
 
 // 14. Trovare il libro con esattamente 223 pagine
 
+const book223Pages = books.find(book => book.pages === 223);
+console.log(book223Pages);
+
 // 15. Trovare il primo libro con rating 4.9
 
 // ----------------------
