@@ -119,6 +119,8 @@ books.forEach(book => console.log('Titolo:', book.title));
 // 17. Stampare una frase per ciascun libro, tipo:
 // "Il libro 'Il Signore degli Anelli' ha 1216 pagine"
 
+books.forEach(book => console.log(`Il libro '${book.title}' ha ${book.pages} pagine`));
+
 // 18. Stampare "Titolo: [title], Autore: [author], Anno: [year]" per ciascun libro
 
 // ----------------------
