@@ -134,3 +134,9 @@ books.forEach(book => console.log(`Titolo: ${book.title}, Autore: ${book.author}
 console.log(`Titolo: ${lastBook.title}, Rating: ${lastBook.rating}`);
 
 // 20. Creare un array con i titoli dei libri pubblicati prima del 1950
+
+const oldBooksTitle = books
+    .filter(book => book.year < 1950)
+    .map(book => book.title);
+
+console.log(oldBooksTitle);
