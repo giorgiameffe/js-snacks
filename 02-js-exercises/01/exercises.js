@@ -59,8 +59,8 @@ console.log('Descrizioni dei prodotti:', productsDescriptions);
 // 7. Ottieni un array di tutti i prodotti che sono al momento disponibili in magazzino.
 // TODO: Usa .filter() e la proprietà 'inStock' per trovare i prodotti disponibili.
 
-
-console.log('Prodotti disponibili:');
+const productsInStock = products.filter(product => product.inStock === true);
+console.log('Prodotti disponibili:', productsInStock);
 
 // 8. Ottieni un array di tutti i prodotti della categoria "Elettronica".
 // TODO: Usa .filter() e la proprietà 'category'.
