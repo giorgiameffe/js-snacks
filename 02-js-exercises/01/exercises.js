@@ -79,6 +79,7 @@ console.log('Prodotti economici:', cheapProducts);
 
 const noElectronicsAndAvailablesProducts = products
     .filter(product => product.category !== 'Elettronica' && product.inStock === true);
+
 console.log('Prodotti non-elettronici e disponibili:', noElectronicsAndAvailablesProducts);
 
 // ----------------------
@@ -88,11 +89,13 @@ console.log('Prodotti non-elettronici e disponibili:', noElectronicsAndAvailable
 // 11. Trova l'oggetto del prodotto con l'ID "p004".
 // TODO: Usa .find() e la proprietà 'id' per trovare il prodotto specifico.
 
-const p004Product = products.find(product => product.id === 'p004')
+const p004Product = products.find(product => product.id === 'p004');
 console.log('Prodotto con ID p004:', p004Product);
 
 // 12. Trova il primo prodotto che costa meno di 100€ ed è al momento disponibile.
 // TODO: Usa .find() con una condizione che combina 'price' e 'inStock'.
 
+const cheapAndAvailableProduct = products
+    .find(product => product.price < 100 && product.inStock);
 
-console.log('Primo prodotto economico e disponibile:');
+console.log('Primo prodotto economico e disponibile:', cheapAndAvailableProduct);
