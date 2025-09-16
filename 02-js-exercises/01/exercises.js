@@ -15,8 +15,8 @@ const products = [
 // 1. Quanti prodotti ci sono nell'array?
 // TODO: Dichiara una variabile 'totalProducts' e usa il metodo .length.
 
-
-console.log(`Numero totale di prodotti: `);
+const totalProducts = products.length;
+console.log(`Numero totale di prodotti: ${totalProducts}`);
 
 // 2. Accedi al primo prodotto dell'array.
 // TODO: Dichiara una variabile 'firstProduct' e usa l'indice corretto.
