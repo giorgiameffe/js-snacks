@@ -33,7 +33,8 @@ console.log('Ultimo prodotto:', lastProduct);
 // 4. Accedi al secondo prodotto della lista.
 // TODO: Dichiara una variabile 'secondProduct' e usa l'indice corretto.
 
-console.log('Secondo prodotto:',);
+const secondProduct = products[1];
+console.log('Secondo prodotto:', secondProduct);
 
 // ----------------------
 // ESERCIZI: MAP
