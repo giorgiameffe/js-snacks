@@ -49,8 +49,8 @@ console.log('Nomi dei prodotti:', productsNames);
 // 6. Crea un array di stringhe descrittive, ad esempio: "Laptop - 1200€" per ogni prodotto.
 // TODO: Usa il metodo .map() e i template literals per creare l'array di stringhe.
 
-
-console.log('Descrizioni dei prodotti:');
+const productsDescriptions = products.map(product => `${product.name} - ${product.price}€`)
+console.log('Descrizioni dei prodotti:', productsDescriptions);
 
 // ----------------------
 // ESERCIZI: FILTER
