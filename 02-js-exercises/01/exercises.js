@@ -27,12 +27,11 @@ console.log('Primo prodotto:', firstProduct);
 // 3. Accedi all'ultimo prodotto dell'array.
 // TODO: Dichiara una variabile 'lastProduct' e usa l'indice basato su .length.
 
-
-console.log('Ultimo prodotto:',);
+const lastProduct = products[products.length - 1];
+console.log('Ultimo prodotto:', lastProduct);
 
 // 4. Accedi al secondo prodotto della lista.
 // TODO: Dichiara una variabile 'secondProduct' e usa l'indice corretto.
-
 
 console.log('Secondo prodotto:',);
 
