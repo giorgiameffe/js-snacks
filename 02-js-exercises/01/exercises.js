@@ -43,8 +43,8 @@ console.log('Secondo prodotto:', secondProduct);
 // 5. Crea un array contenente solo i nomi dei prodotti.
 // TODO: Usa il metodo .map() per creare un nuovo array con i nomi dei prodotti.
 
-
-console.log('\nNomi dei prodotti:');
+const productsNames = products.map(product => product.name);
+console.log('Nomi dei prodotti:', productsNames);
 
 // 6. Crea un array di stringhe descrittive, ad esempio: "Laptop - 1200€" per ogni prodotto.
 // TODO: Usa il metodo .map() e i template literals per creare l'array di stringhe.
@@ -60,7 +60,7 @@ console.log('Descrizioni dei prodotti:');
 // TODO: Usa .filter() e la proprietà 'inStock' per trovare i prodotti disponibili.
 
 
-console.log('\nProdotti disponibili:');
+console.log('Prodotti disponibili:');
 
 // 8. Ottieni un array di tutti i prodotti della categoria "Elettronica".
 // TODO: Usa .filter() e la proprietà 'category'.
