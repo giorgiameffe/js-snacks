@@ -21,8 +21,8 @@ console.log(`Numero totale di prodotti: ${totalProducts}`);
 // 2. Accedi al primo prodotto dell'array.
 // TODO: Dichiara una variabile 'firstProduct' e usa l'indice corretto.
 
-
-console.log('Primo prodotto:',);
+const firstProduct = products[0];
+console.log('Primo prodotto:', firstProduct);
 
 // 3. Accedi all'ultimo prodotto dell'array.
 // TODO: Dichiara una variabile 'lastProduct' e usa l'indice basato su .length.
