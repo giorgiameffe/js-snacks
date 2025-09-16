@@ -1,3 +1,5 @@
+// 🔹 ARRAY DI PARTENZA
+
 const products = [
     { id: "p001", name: "Laptop", category: "Elettronica", price: 1200, inStock: true },
     { id: "p002", name: "Mouse Wireless", category: "Accessori", price: 25, inStock: false },
