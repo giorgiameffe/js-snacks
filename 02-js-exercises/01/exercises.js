@@ -77,8 +77,9 @@ console.log('Prodotti economici:', cheapProducts);
 // 10. Ottieni un array dei prodotti che non sono "Elettronica" e che sono disponibili in magazzino.
 // TODO: Usa .filter() con una condizione complessa che combina 'category' e 'inStock'.
 
-
-console.log('Prodotti non-elettronici e disponibili:');
+const noElectronicsAndAvailablesProducts = products
+    .filter(product => product.category !== 'Elettronica' && product.inStock === true);
+console.log('Prodotti non-elettronici e disponibili:', noElectronicsAndAvailablesProducts);
 
 // ----------------------
 // ESERCIZI: FIND
