@@ -65,8 +65,8 @@ console.log('Prodotti disponibili:', productsInStock);
 // 8. Ottieni un array di tutti i prodotti della categoria "Elettronica".
 // TODO: Usa .filter() e la proprietà 'category'.
 
-
-console.log('Prodotti di elettronica:');
+const electronicProducts = products.filter(product => product.category === 'Elettronica');
+console.log('Prodotti di elettronica:', electronicProducts);
 
 // 9. Ottieni un array di prodotti con un prezzo inferiore a 100€.
 // TODO: Usa .filter() e la proprietà 'price'.
