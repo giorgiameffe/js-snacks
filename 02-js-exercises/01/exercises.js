@@ -71,8 +71,8 @@ console.log('Prodotti di elettronica:', electronicProducts);
 // 9. Ottieni un array di prodotti con un prezzo inferiore a 100€.
 // TODO: Usa .filter() e la proprietà 'price'.
 
-
-console.log('Prodotti economici:');
+const cheapProducts = products.filter(product => product.price < 100);
+console.log('Prodotti economici:', cheapProducts);
 
 // 10. Ottieni un array dei prodotti che non sono "Elettronica" e che sono disponibili in magazzino.
 // TODO: Usa .filter() con una condizione complessa che combina 'category' e 'inStock'.
