@@ -88,8 +88,8 @@ console.log('Prodotti non-elettronici e disponibili:', noElectronicsAndAvailable
 // 11. Trova l'oggetto del prodotto con l'ID "p004".
 // TODO: Usa .find() e la proprietà 'id' per trovare il prodotto specifico.
 
-
-console.log('Prodotto con ID p004:');
+const p004Product = products.find(product => product.id === 'p004')
+console.log('Prodotto con ID p004:', p004Product);
 
 // 12. Trova il primo prodotto che costa meno di 100€ ed è al momento disponibile.
 // TODO: Usa .find() con una condizione che combina 'price' e 'inStock'.
