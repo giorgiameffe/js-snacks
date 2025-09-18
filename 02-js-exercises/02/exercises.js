@@ -122,7 +122,13 @@ console.log(noItalianCities);
 
 // 13. Trovare la prima città con popolazione esattamente 5230000
 
+const bigCity = cities.find(city => city.population === 5230000);
+console.log(bigCity);
+
 // 14. Trovare la città che si chiama "Parigi"
+
+const findParis = cities.find(city => city.name === 'Parigi');
+console.log(findParis);
 
 
 // ----------------------
