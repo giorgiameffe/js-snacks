@@ -59,12 +59,12 @@ printCity(cities[0]);
 
 // 5. Scrivere una funzione che restituisce un array con i nomi di tutte le città
 
-function citiesArray(cities) {
+function citiesNames(cities) {
 
     return cities.map(city => city.name);
 }
 
-console.log(citiesArray(cities));
+console.log(citiesNames(cities));
 
 // 6. Scrivere una funzione che filtra le città con rating maggiore o uguale a 4.8
 
@@ -102,9 +102,18 @@ console.log(citiesDescriptions);
 
 // 10. Ottenere le città con più di 5 milioni di abitanti
 
+const bigCities = cities.filter(city => city.population > 5000000);
+console.log(bigCities);
+
 // 11. Ottenere le città con area maggiore di 2000 km²
 
+const bigArea = cities.filter(city => city.area > 2000);
+console.log(bigArea);
+
 // 12. Ottenere le città che NON sono in Italia
+
+const noItalianCities = cities.filter(city => city.country !== 'Italia');
+console.log(noItalianCities);
 
 
 // ----------------------
