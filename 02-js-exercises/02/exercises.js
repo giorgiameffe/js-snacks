@@ -50,9 +50,30 @@ console.log(totalPopulation);
 
 // 4. Scrivere una funzione che prende una città e stampa: "La città [name] si trova in [country]"
 
+function printCity(city) {
+
+    console.log(`La città ${city.name} si trova in ${city.country}`);
+}
+
+printCity(cities[0]);
+
 // 5. Scrivere una funzione che restituisce un array con i nomi di tutte le città
 
+function citiesArray(cities) {
+
+    return cities.map(city => city.name);
+}
+
+console.log(citiesArray(cities));
+
 // 6. Scrivere una funzione che filtra le città con rating maggiore o uguale a 4.8
+
+function filteredCities(cities) {
+
+    return cities.filter(city => city.rating >= 4.8);
+}
+
+console.log(filteredCities(cities));
 
 
 // ----------------------
