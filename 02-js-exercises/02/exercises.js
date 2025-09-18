@@ -161,7 +161,9 @@ console.log(highRatingCities);
 
 // 19. Stampare con forEach tutte le città con più di 5 milioni di abitanti
 
-cities.forEach(city => console.log())
+const allBigCities = cities.filter(city => city.population > 5000000);
+
+allBigCities.forEach(city => console.log(city.name));
 
 // 20. Scrivere una funzione che restituisce un array di nomi delle città
 // con popolazione maggiore di 5 milioni e rating > 4.7 
