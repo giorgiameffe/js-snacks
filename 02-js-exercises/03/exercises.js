@@ -1,0 +1,87 @@
+// 🔹 ARRAY DI PARTENZA
+
+const animals = [
+    { name: "Elefante", species: "Mammifero", age: 10, weight: 5000, endangered: true },
+    { name: "Tigre", species: "Mammifero", age: 5, weight: 220, endangered: true },
+    { name: "Cammello", species: "Mammifero", age: 7, weight: 600, endangered: false },
+    { name: "Pinguino", species: "Uccello", age: 3, weight: 30, endangered: false },
+    { name: "Squalo", species: "Pesce", age: 15, weight: 800, endangered: true },
+    { name: "Foca", species: "Mammifero", age: 8, weight: 150, endangered: false },
+    { name: "Canguro", species: "Mammifero", age: 6, weight: 85, endangered: false },
+    { name: "Fenicottero", species: "Uccello", age: 4, weight: 3, endangered: false }
+];
+
+
+// ----------------------
+// LENGTH & ACCESSO
+// ----------------------
+
+// 1. Stampare quanti animali ci sono nell’array
+
+// 2. Stampare il nome del primo animale
+
+// 3. Stampare il nome e la specie dell’ultimo animale
+
+
+// ----------------------
+// CICLO FOR
+// ----------------------
+
+// 4. Stampare tutti i nomi degli animali con un ciclo for
+
+// 5. Calcolare la somma di tutti i pesi degli animali
+
+// 6. Stampare gli animali che pesano più di 500 kg
+
+
+// ----------------------
+// MAP
+// ----------------------
+
+// 7. Creare un array con solo i nomi degli animali
+
+// 8. Creare un array di frasi tipo: "[name] è un [species]"
+
+
+// ----------------------
+// FILTER
+// ----------------------
+
+// 9. Ottenere tutti gli animali in pericolo
+
+// 10. Ottenere tutti gli animali che pesano meno di 100 kg
+
+// 11. Ottenere solo gli uccelli
+
+
+// ----------------------
+// FIND
+// ----------------------
+
+// 12. Trovare il primo animale in pericolo
+
+// 13. Trovare l’animale chiamato "Canguro"
+
+
+// ----------------------
+// FOREACH
+// ----------------------
+
+// 14. Stampare per ogni animale: "[name] pesa [weight] kg"
+
+// 15. Stampare solo i nomi degli animali in maiuscolo
+
+
+// ----------------------
+// FUNZIONI / MISTI
+// ----------------------
+
+// 16. Scrivere una funzione che restituisce la media dei pesi
+
+// 17. Scrivere una funzione che restituisce un array con i nomi degli animali più giovani di 5 anni
+
+// 18. Scrivere una funzione che restituisce il nome dell’animale più pesante
+
+// 19. Stampare con forEach solo gli animali in pericolo
+
+// 20. Creare un array di stringhe tipo: "[name] ([species]) – [age] anni"
