@@ -82,9 +82,18 @@ console.log(filteredCities(cities));
 
 // 7. Creare un array con le stringhe: "Nome (Paese)"
 
+const countriesName = cities.map(city => `${city.name} (${city.country})`);
+console.log(countriesName);
+
 // 8. Creare un array con solo le popolazioni delle città
 
+const citiesPopulations = cities.map(city => city.population);
+console.log(citiesPopulations);
+
 // 9. Creare un array di frasi tipo: "[name] ha [population] abitanti su [area] km²"
+
+const citiesDescriptions = cities.map(city => `${city.name} ha ${city.population} abitanti su ${city.area} km2`);
+console.log(citiesDescriptions);
 
 
 // ----------------------
