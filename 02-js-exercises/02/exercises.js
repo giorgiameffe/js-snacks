@@ -137,9 +137,15 @@ console.log(findParis);
 
 // 15. Stampare tutte le città con formato: "[name], [country], [population] abitanti"
 
+cities.forEach(city => console.log(`${city.name} - ${city.country} - ${city.population} abitanti`));
+
 // 16. Stampare solo i nomi delle città
 
+cities.forEach(city => console.log(city.name));
+
 // 17. Stampare per ciascuna città una frase: "[name] ha rating [rating]"
+
+cities.forEach(city => console.log(`${city.name} ha rating ${city.rating}`));
 
 
 // ----------------------
