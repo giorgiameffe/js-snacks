@@ -154,7 +154,24 @@ cities.forEach(city => console.log(`${city.name} ha rating ${city.rating}`));
 
 // 18. Creare un array di nomi delle città con rating >= 4.8 usando filter + map
 
+const highRatingCities = cities.filter(city => city.rating >= 4.8)
+    .map(city => city.name);
+
+console.log(highRatingCities);
+
 // 19. Stampare con forEach tutte le città con più di 5 milioni di abitanti
+
+cities.forEach(city => console.log())
 
 // 20. Scrivere una funzione che restituisce un array di nomi delle città
 // con popolazione maggiore di 5 milioni e rating > 4.7 
+
+function printArrayCities(array) {
+
+    const citiesNames = array.filter(element => element.population > 5000000 && element.rating > 4.7)
+        .map(element => element.name);
+
+    return citiesNames;
+}
+
+console.log(printArrayCities(cities));
