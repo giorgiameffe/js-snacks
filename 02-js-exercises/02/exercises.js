@@ -15,9 +15,33 @@ const cities = [
 
 // 1. Stampare i nomi di tutte le città con un ciclo for
 
+for (let i = 0; i < cities.length; i++) {
+
+    console.log(cities[i].name);
+}
+
 // 2. Stampare nome e paese di tutte le città con un ciclo for
 
+for (let i = 0; i < cities.length; i++) {
+
+    const currentName = cities[i].name;
+    const currentCountry = cities[i].country;
+
+    console.log(`Nome città: ${currentName}, Nome Paese: ${currentCountry}`)
+}
+
 // 3. Calcolare la popolazione totale di tutte le città con un ciclo for
+
+let totalPopulation = 0;
+
+for (let i = 0; i < cities.length; i++) {
+
+    const currentPopulation = cities[i].population;
+
+    totalPopulation += currentPopulation;
+}
+
+console.log(totalPopulation);
 
 
 // ----------------------
