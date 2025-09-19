@@ -18,9 +18,19 @@ const animals = [
 
 // 1. Stampare quanti animali ci sono nell’array
 
+const arrayLength = animals.length;
+console.log('Lunghezza array:', arrayLength);
+
 // 2. Stampare il nome del primo animale
 
+const firstAnimal = animals[0];
+console.log('Primo animale:', firstAnimal);
+
 // 3. Stampare il nome e la specie dell’ultimo animale
+
+const lastAnimalName = animals[animals.length - 1].name;
+const lastAnimalSPecies = animals[animals.length - 1].species;
+console.log(`Nome ultimo animale: ${lastAnimalName} - Specie ultimo animale: ${lastAnimalSPecies}`);
 
 
 // ----------------------
