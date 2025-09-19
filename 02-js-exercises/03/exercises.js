@@ -116,7 +116,13 @@ console.log(birds);
 
 // 12. Trovare il primo animale in pericolo
 
+const firstEndangeredAnimal = animals.find(animal => animal.endangered);
+console.log(firstEndangeredAnimal);
+
 // 13. Trovare l’animale chiamato "Canguro"
+
+const kangaroo = animals.find(animal => animal.name === 'Canguro');
+console.log(kangaroo);
 
 
 // ----------------------
