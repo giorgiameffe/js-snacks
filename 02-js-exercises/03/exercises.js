@@ -95,9 +95,19 @@ console.log(animalsDescription);
 
 // 9. Ottenere tutti gli animali in pericolo
 
+const endangeredAnimals = animals.filter(animal => animal.endangered);
+console.log(endangeredAnimals);
+
 // 10. Ottenere tutti gli animali che pesano meno di 100 kg
 
+const lightestAnimals = animals.filter(animal => animal.weight < 100);
+console.log(lightestAnimals);
+
+
 // 11. Ottenere solo gli uccelli
+
+const birds = animals.filter(animal => animal.species === 'Uccello');
+console.log(birds);
 
 
 // ----------------------
