@@ -80,7 +80,13 @@ console.log(sumWeight);
 
 // 7. Creare un array con solo i nomi degli animali
 
+const animalsNames = animals.map(animal => animal.name);
+console.log(animalsNames);
+
 // 8. Creare un array di frasi tipo: "[name] è un [species]"
+
+const animalsDescription = animals.map(animal => `${animal.name} è un ${animal.species}`);
+console.log(animalsDescription);
 
 
 // ----------------------
