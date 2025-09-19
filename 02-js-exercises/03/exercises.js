@@ -39,9 +39,39 @@ console.log(`Nome ultimo animale: ${lastAnimalName} - Specie ultimo animale: ${l
 
 // 4. Stampare tutti i nomi degli animali con un ciclo for
 
+for (let i = 0; i < animals.length; i++) {
+
+    console.log(animals[i].name);
+}
+
 // 5. Calcolare la somma di tutti i pesi degli animali
 
+let sum = 0;
+
+for (let i = 0; i < animals.length; i++) {
+
+    const currentWeight = animals[i].weight;
+
+    sum += currentWeight;
+}
+
+console.log(sum);
+
 // 6. Stampare gli animali che pesano più di 500 kg
+
+let sumWeight = 0;
+
+for (let i = 0; i < animals.length; i++) {
+
+    const currentWeight = animals[i].weight;
+
+    if (currentWeight > 500) {
+
+        sumWeight += currentWeight;
+    }
+}
+
+console.log(sumWeight);
 
 
 // ----------------------
