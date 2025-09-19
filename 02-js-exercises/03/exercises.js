@@ -144,10 +144,48 @@ animals.forEach(animal => console.log(animal.name.toUpperCase()));
 
 // 16. Scrivere una funzione che restituisce la media dei pesi
 
+function getWeightAvg(array) {
+
+    const sumWeights = array.reduce((tot, currentValue) => tot += currentValue.weight, 0);
+
+    const weightAvg = sumWeights / array.length;
+
+    return weightAvg;
+}
+
+console.log(getWeightAvg(animals));
+
 // 17. Scrivere una funzione che restituisce un array con i nomi degli animali più giovani di 5 anni
+
+function getLoughestAnimals(array) {
+
+    return array.filter(e => e.age < 5);
+}
+
+console.log(getLoughestAnimals(animals));
 
 // 18. Scrivere una funzione che restituisce il nome dell’animale più pesante
 
+function getHeaviestAnimal(array) {
+
+    const heaviestAnimal = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i].weight > heaviestAnimal.weight) {
+
+            heaviestAnimal = array[i];
+        }
+    }
+
+    return heaviestAnimal.name;
+}
+
+console.log(getHeaviestAnimal(animals));
+
 // 19. Stampare con forEach solo gli animali in pericolo
 
+endangeredAnimals.forEach(animal => console.log(animal));
+
 // 20. Creare un array di stringhe tipo: "[name] ([species]) – [age] anni"
+
+animals.forEach(animal => console.log(`${animal.name} (${animal.species} - ${animal.age} anni)`));
