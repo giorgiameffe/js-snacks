@@ -131,7 +131,11 @@ console.log(kangaroo);
 
 // 14. Stampare per ogni animale: "[name] pesa [weight] kg"
 
+animals.forEach(animal => console.log(`${animal.name} pesa ${animal.weight} kg`));
+
 // 15. Stampare solo i nomi degli animali in maiuscolo
+
+animals.forEach(animal => console.log(animal.name.toUpperCase()));
 
 
 // ----------------------
