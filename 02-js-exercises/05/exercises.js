@@ -19,11 +19,36 @@ const books = [
 // 1. Stampare tutti i titoli dei libri
 // Usa un ciclo `for` per stampare tutti i titoli dei libri.
 
+for (let i = 0; i < books.length; i++) {
+
+    console.log(books[i].title);
+}
+
 // 2. Sommare tutti i prezzi dei libri
 // Usa un ciclo `for` per sommare il prezzo di tutti i libri.
 
+let sum = 0;
+
+for (let i = 0; i < books.length; i++) {
+
+    const currentBook = books[i];
+
+    sum += currentBook.price;
+}
+
+console.log('Somma prezzi:', sum);
+
 // 3. Stampare i libri usciti prima del 1900
 // Usa un ciclo `for` per trovare e stampare i libri pubblicati prima del 1900.
+
+for (let i = 0; i < books.length; i++) {
+
+    const currentBook = books[i];
+
+    if (currentBook.year < 1900) {
+        console.log(currentBook);
+    }
+}
 
 
 // ----------------------
