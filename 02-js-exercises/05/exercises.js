@@ -1,3 +1,5 @@
+// 🔹 ARRAY DI PARTENZA
+
 const books = [
     { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925, genre: "Fiction", rating: 88, price: 10 },
     { title: "1984", author: "George Orwell", year: 1949, genre: "Dystopian", rating: 92, price: 15 },
@@ -106,3 +108,66 @@ books.forEach(book => console.log(`Titolo: ${book.title} - Prezzo: ${book.price}
 
 const booksYears = books.map(book => book.year);
 console.log(booksYears);
+
+
+// ----------------------
+// LENGTH & ACCESSO
+// ----------------------
+
+// 13. Accesso al primo elemento – Stampare il titolo del primo libro
+// Usa l'accesso tramite indice per ottenere il primo libro e stampare il suo titolo.
+
+const firstBook = books[0];
+console.log(firstBook.title);
+
+// 14. Accesso all'ultimo elemento – Stampare il titolo dell'ultimo libro
+// Usa l'accesso tramite indice per ottenere l'ultimo libro e stampare il suo titolo.
+
+const lastBook = books[books.length - 1];
+console.log(lastBook.title)
+
+// 15. Stampare la lunghezza dell'array – Stampare quanti libri ci sono nell'array
+// Usa la proprietà `length` per ottenere il numero di libri presenti nell'array.
+
+console.log('Numero libri:', books.length);
+
+// 16. Accesso al penultimo elemento – Stampare il titolo e l'autore del penultimo libro
+// Usa l'accesso tramite indice per ottenere il penultimo libro e stampare il suo titolo e autore.
+
+const secondLastBook = books[books.length - 1];
+console.log(`Libro: ${secondLastBook.title} - Autore: ${secondLastBook.author}`);
+
+// 17. Verifica se l'array è vuoto – Controlla se l'array `books` è vuoto e stampare un messaggio
+// Verifica se l'array è vuoto e stampare un messaggio appropriato.
+
+if (books.length === 0) {
+    console.log("L'array è vuoto");
+} else {
+    console.log("L'array contiene dei libri");
+}
+
+
+// ----------------------
+// MISTI
+// ----------------------
+
+// 18. Creare un array con i titoli dei libri che hanno rating >= 90
+// Usa `filter()` per selezionare i libri con rating >= 90 e poi `map()` per ottenere solo i titoli.
+
+const highRatingBooks = books.filter(book => book.rating >= 90).map(book => book.title);
+console.log(highRatingBooks);
+
+// 19. Stampare con `forEach()` i libri del genere "Fiction" mostrando una frase tipo:
+// "[title] scritto da [author]"
+// Usa `filter()` per selezionare i libri fantasy e poi `forEach()` per stampare la frase per ciascuno.
+
+const fictionBooks = books.filter(book => book.genre === 'Fiction');
+
+fictionBooks.forEach(book => console.log(`${book.title} scritto da ${book.author}`));
+
+// 20. Stampare con `forEach` solo i titoli dei libri del genere "Fiction" che costano meno di 15€
+// Usa `filter()` per selezionare i libri che soddisfano entrambe le condizioni e poi `forEach()` per stampare solo i titoli.
+
+const cheapFictionBooks = books.filter(book => book.genre === 'Fiction' && book.price < 15);
+
+cheapFictionBooks.forEach(book => console.log(`Titoli: ${book.title}`));
