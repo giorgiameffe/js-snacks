@@ -58,26 +58,51 @@ for (let i = 0; i < books.length; i++) {
 // 4. Stampare l’autore di ogni libro
 // Usa il metodo `forEach` per stampare l’autore di ogni libro.
 
+books.forEach(book => console.log('Autori:', book.author));
+
 // 5. Creare un array con solo i titoli dei libri
 // Usa il metodo `map` per creare un nuovo array contenente solo i titoli dei libri.
+
+const booksTitles = books.map(book => book.title);
+console.log(booksTitles);
 
 // 6. Filtrare i libri con rating >= 90
 // Usa il metodo `filter` per ottenere un array con i libri che hanno un rating maggiore o uguale a 90.
 
+const goodBooks = books.filter(book => book.rating >= 90);
+console.log(goodBooks);
+
 // 7. Trova il primo libro con rating 95
 // Usa il metodo `find` per ottenere il primo libro con un rating di 95.
+
+const findBook = books.find(book => book.rating === 95);
+console.log(findBook);
 
 // 8. Creare una frase del tipo "[title] è un libro di [author]"
 // Usa il metodo `map` per creare un array di frasi che contengono il titolo e l'autore di ogni libro.
 
+const booksDescriptions = books.map(book => `${book.title} è un libro di ${book.author}`);
+console.log(booksDescriptions);
+
 // 9. Ottenere solo i libri del genere "Fantasy"
 // Usa il metodo `filter` per ottenere tutti i libri del genere "Fantasy".
+
+const fantasyBooks = books.filter(book => book.genre === 'Fantasy');
+console.log(fantasyBooks);
 
 // 10. Trovare un libro specifico (ad esempio "Moby Dick")
 // Usa il metodo `find` per cercare un libro specifico per titolo (ad esempio "Moby Dick").
 
+const findMobyDick = books.find(book => book.title === 'Moby Dick');
+console.log(findMobyDick);
+
 // 11. Stampare il titolo e il prezzo di ogni libro
 // Usa `forEach` per stampare il titolo e il prezzo di ogni libro.
 
+books.forEach(book => console.log(`Titolo: ${book.title} - Prezzo: ${book.price}€`));
+
 // 12. Creare un array con solo gli anni di pubblicazione dei libri
 // Usa il metodo `map` per creare un array contenente solo gli anni di pubblicazione dei libri.
+
+const booksYears = books.map(book => book.year);
+console.log(booksYears);
