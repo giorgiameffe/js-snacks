@@ -93,6 +93,14 @@ console.log(getCity('Roma'));
 // METODI COMBINATI
 // ----------------------
 
-// 11. Creare un array con i viaggi che durano più di 5 giorni e poi  ottenere solo le destinazioni.
+// 11. Creare un array con i viaggi che durano più di 5 giorni e poi ottenere solo le destinazioni
+
+const destinations = travels.filter(travel => travel.duration > 5).map(travel => travel.destination);
+console.log(destinations);
 
 // 12. Conta quanti viaggi durano meno di 6 giorni usando filter e la proprietà length.
+
+const shortTravels = travels.filter(travel => travel.duration < 6);
+
+const shortTravelsNumber = shortTravels.length;
+console.log(shortTravelsNumber);
