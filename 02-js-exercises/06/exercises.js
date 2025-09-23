@@ -1,12 +1,12 @@
 // 🔹 ARRAY DI PARTENZA
 
 const travels = [
-    { id: 1, destinazione: "Parigi", durata: 5, prezzo: 750, compagnia: "Air France" },
-    { id: 2, destinazione: "Roma", durata: 3, prezzo: 500, compagnia: "Alitalia" },
-    { id: 3, destinazione: "Tokyo", durata: 10, prezzo: 1500, compagnia: "Japan Airlines" },
-    { id: 4, destinazione: "New York", durata: 7, prezzo: 1200, compagnia: "Delta" },
-    { id: 5, destinazione: "Sydney", durata: 12, prezzo: 1800, compagnia: "Qantas" },
-    { id: 6, destinazione: "Londra", durata: 4, prezzo: 700, compagnia: "British Airways" },
+    { id: 1, destination: "Parigi", duration: 5, price: 750, company: "Air France" },
+    { id: 2, destination: "Roma", duration: 3, price: 500, company: "Alitalia" },
+    { id: 3, destination: "Tokyo", duration: 10, price: 1500, company: "Japan Airlines" },
+    { id: 4, destination: "New York", duration: 7, price: 1200, company: "Delta" },
+    { id: 5, destination: "Sydney", duration: 12, price: 1800, company: "Qantas" },
+    { id: 6, destination: "Londra", duration: 4, price: 700, company: "British Airways" },
 ];
 
 // ----------------------
@@ -15,7 +15,23 @@ const travels = [
 
 // 1. Usa un ciclo for per stampare tutte le destinazioni dei viaggi.
 
+for (let i = 0; i < travels.length; i++) {
+
+    console.log(travels[i].destination);
+}
+
 // 2. Calcola la somma totale dei prezzi di tutti i viaggi usando un ciclo for.
+
+let sum = 0;
+
+for (let i = 0; i < travels.length; i++) {
+
+    const currentPrice = travels[i].price;
+
+    sum += currentPrice;
+}
+
+console.log(sum);
 
 // ----------------------
 // METODI ARRAY
