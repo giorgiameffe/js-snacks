@@ -72,7 +72,22 @@ travels.forEach(travel => console.log(`${travel.destination} dura ${travel.durat
 // 9. Scrivi una funzione che restituisce un nuovo array contenente solo le destinazioni dei viaggi
 // il cui prezzo è maggiore di 1000 euro.
 
+function getDestination(array) {
+
+    return array.filter(e => e.price > 1000).map(e => e.destination);
+}
+
+console.log(getDestination(travels));
+
 // 10. Scrivi una funzione che prende il nome di una destinazione e usa find per restituire l’oggetto viaggio corrispondente.
+
+function getCity(destination) {
+
+    return travels.find(e => e.destination === destination);
+
+}
+
+console.log(getCity('Roma'));
 
 // ----------------------
 // METODI COMBINATI
