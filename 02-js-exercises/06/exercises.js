@@ -65,11 +65,27 @@ console.log(airlines);
 
 travels.forEach(travel => console.log(`${travel.destination} dura ${travel.duration} giorni e costa ${travel.price} euro`));
 
+// 9. Calcola il totale della durata di tutti i viaggi
+
+const totDuration = travels.reduce((tot, currentTravel) => tot + currentTravel.duration, 0);
+console.log(`Durata totale viaggi: ${totDuration} giorni`);
+
+// 10. Calcolare il prezzo medio dei viaggi
+
+const totPrice = travels.reduce((tot, currentTravel) => tot + currentTravel.price, 0);
+
+const priceAverage = totPrice / travels.length;
+console.log(`Prezzo medio dei viaggi: ${priceAverage} €`);
+
+// 11. Calcolare la somma totale dei prezzi dei viaggi
+
+console.log(`Prezzo totale dei viaggi: ${totPrice} €`);
+
 // ----------------------
 // FUNZIONI
 // ----------------------
 
-// 9. Scrivi una funzione che restituisce un nuovo array contenente solo le destinazioni dei viaggi
+// 12. Scrivi una funzione che restituisce un nuovo array contenente solo le destinazioni dei viaggi
 // il cui prezzo è maggiore di 1000 euro.
 
 function getDestination(array) {
@@ -79,7 +95,7 @@ function getDestination(array) {
 
 console.log(getDestination(travels));
 
-// 10. Scrivi una funzione che prende il nome di una destinazione e usa find per restituire l’oggetto viaggio corrispondente.
+// 13. Scrivi una funzione che prende il nome di una destinazione e usa find per restituire l’oggetto viaggio corrispondente.
 
 function getCity(destination) {
 
@@ -93,14 +109,44 @@ console.log(getCity('Roma'));
 // METODI COMBINATI
 // ----------------------
 
-// 11. Creare un array con i viaggi che durano più di 5 giorni e poi ottenere solo le destinazioni
+// 14. Creare un array con i viaggi che durano più di 5 giorni e poi ottenere solo le destinazioni
 
 const destinations = travels.filter(travel => travel.duration > 5).map(travel => travel.destination);
 console.log(destinations);
 
-// 12. Conta quanti viaggi durano meno di 6 giorni usando filter e la proprietà length.
+// 15. Conta quanti viaggi durano meno di 6 giorni usando filter e la proprietà length.
 
 const shortTravels = travels.filter(travel => travel.duration < 6);
 
 const shortTravelsNumber = shortTravels.length;
 console.log(shortTravelsNumber);
+
+// 16. Contare quanti viaggi hanno durata maggiore di 7 giorni
+
+const longTravels = travels.filter(travel => travel.duration > 7);
+
+console.log('Numero viaggi che durano più di 7 giorni:', longTravels.length);
+
+// ----------------------
+// LENGTH & ACCESSO
+// ----------------------
+
+// 17. Accedi al primo viaggio nell'array e stampa la sua destinazione
+
+const firstTravel = travels[0];
+console.log('Destinazione primo viaggio:', firstTravel.destination)
+
+// 18. Accedi all'ultimo viaggio nell'array e stampa la sua destinazione
+
+const lastTravel = travels[travels.length - 1];
+console.log('Destinazione ultimo viaggio:', lastTravel.destination);
+
+// 19. Accedi al penultimo viaggio nell'array e stampa la sua destinazione
+
+const secondLastTravel = travels[travels.length - 2];
+console.log('Destinazione penultimo viaggio:', secondLastTravel.destination);
+
+// 20. Accedi al terzo viaggio nell'array e stampa la sua durata
+
+const thirdTravel = travels[2];
+console.log(`Durata terzo viaggio: ${thirdTravel.duration} giorni`);
