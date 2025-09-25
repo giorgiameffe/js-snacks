@@ -7,7 +7,7 @@ Ogni snack affronta un concetto specifico del linguaggio, dai fondamenti agli ar
 
 ## 📝 Come è organizzata la repository
 
-- **/js-exercises/**: cartella principale.
+- **/01-js-exercises/**, **/02-js-exercises/**...: cartelle principali.
 - **cartelle 01/02..**: sottocartelle numerate che raggruppano gli esercizi .
 - Ogni snack contiene un file `.js` con la **consegna** come commento.
 - Gli esercizi partono da semplici manipolazioni di array e stringhe fino a piccole sfide con oggetti e funzioni.
