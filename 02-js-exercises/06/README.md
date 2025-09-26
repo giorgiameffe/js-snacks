@@ -1,4 +1,4 @@
-# ✈️ **Esercizi JavaScript: Metodi degli Array con Viaggi**
+# ✈️ Esercizi JavaScript: Manipolare Array di Oggetti Viaggi
 
 Questa raccolta di esercizi aiuta a fare pratica con i principali **metodi degli array di oggetti** in JavaScript, utilizzando come esempio una lista di **viaggi**.
 

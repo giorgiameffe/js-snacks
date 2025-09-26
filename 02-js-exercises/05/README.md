@@ -1,4 +1,4 @@
-# 📚 Esercizi JavaScript: Metodi degli Array con Libri
+# 📚 Esercizi JavaScript: Manipolare Array di Oggetti Libri
 
 Questa raccolta di esercizi aiuta a fare pratica con i principali **metodi degli array di oggetti** in JavaScript, usando come esempio una lista di **libri**.  
 

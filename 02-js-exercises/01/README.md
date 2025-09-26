@@ -1,4 +1,4 @@
-# 🛒 Esercizi JavaScript: Metodi degli Array con Prodotti
+# 🛒 Esercizi JavaScript: Manipolare Array di Oggetti Prodotti
 
 Questa raccolta di esercizi aiuta a fare pratica con i principali metodi per lavorare sugli **array di oggetti** in JavaScript, usando come esempio una lista di prodotti.  
 

@@ -1,4 +1,4 @@
-# 🏅 Esercizi JavaScript: Metodi degli Array con Atleti
+# 🏅 Esercizi JavaScript: Manipolare Array di Oggetti Atleti
 
 Questa raccolta di esercizi aiuta a fare pratica con i principali **metodi sugli array di oggetti** in JavaScript, usando come esempio una lista di **atleti famosi**.  
 
