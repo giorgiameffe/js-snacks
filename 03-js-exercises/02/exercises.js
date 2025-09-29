@@ -19,8 +19,32 @@ const pets = [
 // ----------------------
 
 // 1. Stampare tutti i nomi dei pets.
+
+for (let i = 0; i < pets.length; i++) {
+
+    console.log(pets[i].name);
+}
+
 // 2. Sommare tutte le età dei pets.
+
+let sum = 0;
+
+for (let i = 0; i < pets.length; i++) {
+
+    sum += pets[i].age;
+}
+
+console.log('Somma età:', sum);
+
 // 3. Stampare i pets che pesano più di 10 kg.
+
+for (let i = 0; i < pets.length; i++) {
+
+    if (pets[i].weight > 10) {
+
+        console.log(pets[i]);
+    }
+}
 
 
 // ----------------------
@@ -28,16 +52,51 @@ const pets = [
 // ----------------------
 
 // 4. Stampare tipo e paese di ogni pet.
+
+pets.forEach(pet => console.log(`Tipo: ${pet.type} - Paese: ${pet.country}`));
+
 // 5. Creare un array con solo i nomi dei pets.
+
+const petsNames = pets.map(pet => pet.name);
+console.log(petsNames);
+
 // 6. Ottenere tutti i gatti (type === "Cat").
+
+const cats = pets.filter(pet => pet.type === 'Cat');
+console.log(cats);
+
 // 7. Trovare il primo pet con meno di 2 anni.
+
+const firstYoungPet = pets.find(pet => pet.age < 2);
+console.log(firstYoungPet);
+
 // 8. Creare frasi tipo: "[name] è un [type] proveniente da [country]".
+
+pets.forEach(pet => console.log(`${pet.name} è un ${pet.type} proveniente da ${pet.country}`));
+
 // 9. Ottenere solo i pets provenienti dagli USA.
+
+const petsUSA = pets.filter(pet => pet.country === 'USA');
+console.log(petsUSA);
+
 // 10. Trovare un pet specifico (ad esempio "Buddy").
+
+const buddy = pets.find(pet => pet.name === 'Buddy');
+console.log(buddy);
+
 // 11. Stampare il nome e l’età di ogni pet.
+
+pets.forEach(pet => console.log(`Nome: ${pet.name} - Età: ${pet.age} anni`));
+
 // 12. Creare un array con solo i pesi dei pets.
+
+const petsWeights = pets.map(pet => pet.weight);
+console.log(petsWeights);
+
 // 13. Calcolare la somma totale dei pesi.
 
+const sumWeights = pets.reduce((tot, a) => tot + a.weight, 0);
+console.log('Somma pesi:', sumWeights);
 
 // ----------------------
 // ACCESSO & LENGTH

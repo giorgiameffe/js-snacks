@@ -1,3 +1,5 @@
+// 🔹 ARRAY DI PARTENZA
+
 const painters = [
     { name: "Leonardo da Vinci", movement: "Renaissance", birth: 1452, death: 1519 },
     { name: "Michelangelo", movement: "Renaissance", birth: 1475, death: 1564 },
