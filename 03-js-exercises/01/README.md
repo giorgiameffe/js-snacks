@@ -29,7 +29,7 @@ L’obiettivo è allenarsi a **iterare**, **accedere**, **trasformare**, **filtr
 | 17 | `filter` + `map` + `find`     | Trovare il nome del primo pittore impressionista.                           |
 | 18 | `filter` + `forEach`        | Stampare i pittori che hanno vissuto meno di 50 anni.                       |
 | 19 | `filter` + `map`            | Ottenere i nomi in maiuscolo dei pittori nati prima del 1600.               |
-| 20 | `map` + `reduce`            | Calcolare l’età media di tutti i pittori.                                   |
+| 20 | `map` + `reduce`            | Calcolare somma degli anni vissuti dei pittori.                                 |
 
 ---
 
