@@ -103,15 +103,44 @@ console.log('Somma pesi:', sumWeights);
 // ----------------------
 
 // 14. Stampare il nome del primo pet.
+
+const firstPet = pets[0];
+console.log(firstPet.name);
+
 // 15. Stampare il nome dell’ultimo pet.
+
+const lastPet = pets[pets.length - 1];
+console.log(lastPet.name);
+
 // 16. Stampare quanti pets ci sono nell’array.
+
+console.log('Numero animali domestici:', pets.length);
+
 // 17. Stampare nome e tipo del penultimo pet.
 
+const lastSecondPet = pets[pets.length - 2];
+console.log(`Nome: ${lastSecondPet.name} - Tipo: ${lastSecondPet.type}`);
 
 // ----------------------
 // METODI COMBINATI
 // ----------------------
 
 // 18. Creare un array con i nomi dei pets che pesano meno di 10 kg.
+
+const lightPets = pets
+    .filter(pet => pet.weight < 10)
+    .map(pet => pet.name);
+
+console.log(lightPets);
+
 // 19. Stampare i cani con frase tipo: "Il cane [name] ha [age] anni".
+
+const dogs = pets.filter(pet => pet.type === 'Dog');
+
+dogs.forEach(dog => console.log(`Il cane ${dog.name} ha ${dog.age} anni`));
+
 // 20. Stampare i nomi dei pets con età >= 3 e peso <= 7 kg.
+
+const filteredPets = pets.filter(pet => pet.age >= 3 && pet.weight <= 7);
+
+filteredPets.forEach(pet => console.log(pet.name));
