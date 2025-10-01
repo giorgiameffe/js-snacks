@@ -82,21 +82,68 @@ console.log(firstDrikNoCaffeine);
 const drink160Calories = drinks.find(drink => drink.calories === 160);
 console.log(drink160Calories);
 
+// 14. Calcola il totale delle calorie di tutti i drinks (reduce)
+
+const sumCalories = drinks.reduce((tot, a) => tot + a.calories, 0);
+console.log('Somma calorie:', sumCalories);
 
 // ----------------------
 // FUNZIONI
 // ----------------------
 
-// 14. Scrivi una funzione che ritorna tutti i nomi in maiuscolo
-// 15. Scrivi una funzione che ritorna tutti i drinks senza caffeina
+// 15. Scrivi una funzione che ritorna tutti i nomi in maiuscolo
+
+function getUppercaseNames(arr) {
+
+    arr.forEach(e => console.log(e.name.toUpperCase()))
+}
+
+getUppercaseNames(drinks);
+
+// 16. Scrivi una funzione che ritorna tutti i drinks senza caffeina
+
+function getNoCaffeineDrinks(arr) {
+
+    return arr.filter(e => e.caffeine === false);
+}
+
+console.log(getNoCaffeineDrinks(drinks));
 
 
 // ----------------------
 // METODI COMBINATI
 // ----------------------
 
-// 16. Ottieni i nomi dei drinks con più di 100 calorie (filter + map)
-// 17. Trova il nome del primo Energy Drink (filter + map + find)
-// 18. Stampa i drinks con meno di 50 calorie (filter + forEach)
-// 19. Ottieni i nomi in maiuscolo dei drinks senza caffeina (filter + map)
-// 20. Calcola il totale delle calorie di tutti i drinks (map + reduce)
+// 17. Ottieni i nomi dei drinks con più di 100 calorie (filter + map)
+
+const highCaloriesDrinks = drinks
+    .filter(drink => drink.calories > 100)
+    .map(drink => drink.name);
+
+console.log(highCaloriesDrinks);
+
+// 18. Trova il nome del primo Energy Drink (filter + map + find)
+
+const firstEnergyDrink = drinks
+    .filter(drink => drink.type === 'Energy Drink')
+    .map(drink => drink.name)
+    .find(drink => drink);
+
+console.log(firstEnergyDrink);
+
+// 19. Stampa i drinks con meno di 50 calorie (filter + forEach)
+
+const lowCaloriesDrinks = drinks.filter(drink => drink.calories < 50);
+
+lowCaloriesDrinks.forEach(drink => console.log(drink));
+
+// 20. Crea un array di nomi in maiuscolo dei drinks senza caffeina (filter + map)
+
+const noCaffeineDrinks = drinks
+    .filter(drink => drink.caffeine === false)
+    .map(drink => drink.name.toUpperCase());
+
+console.log(noCaffeineDrinks);
+
+// 20. Calcola il totale delle calorie di tutti i drinks (reduce)
+
