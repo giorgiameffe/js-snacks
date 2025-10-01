@@ -84,20 +84,66 @@ const eightHoursHobby = hobbies.find(h => h.weeklyHours === 8);
 console.log(eightHoursHobby);
 
 
+// 14. Calcola il totale delle ore settimanali di tutti gli hobby (reduce)
+
+const sumHours = hobbies.reduce((tot, a) => tot + a.weeklyHours, 0);
+console.log('Tot ore:', sumHours);
+
+
 // ----------------------
 // FUNZIONI
 // ----------------------
 
-// 14. Scrivi una funzione che ritorna tutti i nomi in maiuscolo
-// 15. Scrivi una funzione che ritorna tutti gli hobby indoor
+// 15. Scrivi una funzione che ritorna tutti i nomi in maiuscolo
+
+function getUppercaseNames(arr) {
+
+    return arr.forEach(e => console.log(e.name.toUpperCase()));
+}
+
+getUppercaseNames(hobbies);
+
+// 16. Scrivi una funzione che ritorna tutti gli hobby indoor
+
+function getIndoorHobbies(arr) {
+
+    return arr.filter(e => e.indoor)
+}
+
+console.log(getIndoorHobbies(hobbies));
 
 
 // ----------------------
 // METODI COMBINATI
 // ----------------------
 
-// 16. Ottieni i nomi degli hobby con più di 6 ore settimanali (filter + map)
-// 17. Trova il nome del primo hobby di tipo "Sport" (filter + map + find)
-// 18. Stampa gli hobby con meno di 5 ore settimanali (filter + forEach)
-// 19. Ottieni i nomi in maiuscolo degli hobby outdoor (filter + map)
-// 20. Calcola il totale delle ore settimanali di tutti gli hobby (map + reduce)
+// 17. Ottieni i nomi degli hobby con più di 6 ore settimanali (filter + map)
+
+const longHobbiesNames = hobbies
+    .filter(h => h.weeklyHours > 6)
+    .map(h => h.name);
+
+console.log(longHobbiesNames);
+
+// 18. Trova il nome del primo hobby di tipo "Sport" (filter + map + find)
+
+const firstSport = hobbies
+    .filter(h => h.type === 'Sport')
+    .map(h => h.name)
+    .find(h => h);
+
+console.log(firstSport);
+
+// 19. Stampa gli hobby con meno di 5 ore settimanali (filter + forEach)
+
+const lessFiveHoursHobbies = hobbies.filter(h => h.weeklyHours < 5);
+
+lessFiveHoursHobbies.forEach(h => console.log(h.name));
+
+// 20. Crea un array di nomi in maiuscolo degli hobby outdoor (filter + map)
+
+const uppercaseOutdoorHobbies = hobbies
+    .filter(h => h.indoor === false)
+    .map(h => h.name.toUpperCase());
+
+console.log(uppercaseOutdoorHobbies);
