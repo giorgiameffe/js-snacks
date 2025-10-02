@@ -15,8 +15,8 @@ L’obiettivo è allenarsi a **iterare**, **accedere**, **trasformare**, **filtr
 | 3  | Accesso                   | Stampare il tipo dell’ultimo articolo.                                      |
 | 4  | Accesso                   | Stampare il prezzo del terzo articolo.                                      |
 | 5  | Accesso                   | Stampare la taglia del quarto articolo.                                     |
-| 6  | `for`       | Stampare tutti i nomi degli articoli.                                       |
-| 7  | `for`         | Calcolare la somma dei prezzi di tutti gli articoli.                        |
+| 6  | `for`                     | Stampare tutti i nomi degli articoli.                                       |
+| 7  | `for`                     | Calcolare la somma dei prezzi di tutti gli articoli.                        |
 | 8  | `for`                     | Trovare l’articolo più costoso.                                             |
 | 9  | `for`                     | Trovare l’articolo meno costoso.                                            |
 | 10 | `map`                     | Creare un nuovo array con solo i nomi degli articoli.                       |
@@ -25,14 +25,16 @@ L’obiettivo è allenarsi a **iterare**, **accedere**, **trasformare**, **filtr
 | 13 | `filter`                  | Trovare tutti gli articoli di tipo `"Shoes"`.                               |
 | 14 | `find`                    | Trovare il primo articolo di tipo `"Accessory"`.                            |
 | 15 | `reduce`                  | Calcolare il totale dei prezzi di tutti gli articoli.                       |
-| 16 | Funzione + `map`          | Restituire tutti i nomi in maiuscolo.                                       |
-| 17 | Funzione + `filter`       | Restituire tutti gli articoli di un certo tipo passato come parametro.      |
-| 18 | Funzione + `filter`       | Restituire tutti gli articoli sotto un certo prezzo passato come parametro. |
-| 19 | `filter` + `map`          | Ottenere i nomi degli articoli che costano più di 60.                       |
-| 20 | `filter` + `find`         | Trovare il nome del primo articolo con taglia `"One Size"`.                 |
-| 21 | `filter` + `forEach`      | Stampare tutti gli articoli con prezzo inferiore a 30.                      |
-| 22 | `map`                     | Creare un nuovo array con i prezzi raddoppiati.                             |
-| 23 | `filter` + `reduce`       | Calcolare il totale dei prezzi degli articoli di tipo `"Top"`.              |
+| 16 | `filter` + `map`          | Trovare tutti gli articoli con prezzo maggiore di 50 e stampare i nomi.     |
+| 17 | `map` + `find`            | Creare un array con solo nome e taglia e trovare il primo articolo con taglia `"M"`. |
+| 18 | Funzione + `forEach`      | Restituire tutti i nomi in maiuscolo.                                       |
+| 19 | Funzione + `filter`       | Restituire tutti gli articoli di un certo tipo passato come parametro.      |
+| 20 | Funzione + `filter`       | Restituire tutti gli articoli sotto un certo prezzo passato come parametro. |
+| 21 | `filter` + `map`          | Ottenere i nomi degli articoli che costano più di 60.                       |
+| 22 | `filter` + `find`         | Trovare il nome del primo articolo con taglia `"One Size"`.                 |
+| 23 | `filter` + `forEach`      | Stampare tutti gli articoli con prezzo inferiore a 30.                      |
+| 24 | `map`                     | Creare un nuovo array con i prezzi raddoppiati.                             |
+| 25 | `filter` + `reduce`       | Calcolare il totale dei prezzi degli articoli di tipo `"Top"`.              |
 
 ---
 
@@ -40,13 +42,11 @@ L’obiettivo è allenarsi a **iterare**, **accedere**, **trasformare**, **filtr
 
 | #  | Metodo / Argomento        | Descrizione                                                                 |
 |----|---------------------------|-----------------------------------------------------------------------------|
-| 24 | `push`                    | Aggiungere un articolo alla fine dell’array.                                 |
-| 25 | `unshift`                 | Aggiungere un articolo all’inizio dell’array.                                |
-| 26 | `pop`                     | Rimuovere l’ultimo articolo e stampare il nome dell’articolo rimosso.       |
-| 27 | `shift`                   | Rimuovere il primo articolo e stampare il nome dell’articolo rimosso.       |
-| 28 | Combinazione              | Aggiungere due articoli alla fine e rimuovere il primo: stampare il nuovo array. |
-| 29 | Combinazione              | Rimuovere due articoli dall’inizio e aggiungere uno nuovo alla fine: stampare il nuovo array. |
-| 30 | Combinazione              | Rimuovere l’ultimo articolo e aggiungere uno nuovo all’inizio in un’unica sequenza: stampare l’array finale. |
+| 26 | `push`                    | Aggiungere un articolo alla fine dell'array.                                 |
+| 27 | `unshift`                 | Aggiungere un articolo all'inizio dell'array.                                |
+| 28 | `pop`                     | Rimuovere l'ultimo articolo e stampare il nome dell'articolo rimosso.       |
+| 29 | `shift`                   | Rimuovere il primo articolo e stampare il nome dell'articolo rimosso.       |
+| 30 | Combinazione              | Aggiungere due articoli alla fine e rimuovere il primo: stampare il nuovo array. |
 
 ---
 
